@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_file">
+
+                <TableRow android:background="@color/black"
+                    android:paddingTop="1dp">
+
+                    <TextView
+                        android:id="@+id/index"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:background="@drawable/border_file"
+                        android:text="1"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="normal"/>
+
+                    <TextView
+                        android:id="@+id/hospitalName"
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:background="@color/white"
+                        android:text="Hospital Name"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="normal"/>
+
+                    <TextView
+                        android:id="@+id/doctorName"
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:background="@drawable/border_file"
+                        android:text="Doctor Name"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="normal"/>
+
+                    <TextView
+                        android:id="@+id/patientName"
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:text="Patient Name"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="normal"/>
+
+                    <TextView
+                        android:id="@+id/consultType"
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:background="@drawable/border_file"
+                        android:gravity="center"
+                        android:text="consult Type"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="normal"/>
+
+                    <TextView
+                        android:id="@+id/tvDate"
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:text="2022-12-12"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/tvTime"
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border_file"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:text="05:00 pm"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/userPaymentId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:minWidth="200dp"
+                        android:maxWidth="250dp"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:background="@color/white"
+                        android:text="Payment Id"
+                        android:textColor="@color/black"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/doctorFees"
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:background="@drawable/border_file"
+                        android:gravity="center"
+                        android:text="0 ₹"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="normal"/>
+
+                    <TextView
+                        android:id="@+id/status"
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:text="Status"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="normal"/>
+
+                    <!--
+                                        <ImageView
+                                            android:id="@+id/tvStatus"
+                                            android:layout_width="130dp"
+                                            android:layout_height="match_parent"
+                                            android:padding="10dp"
+                                            android:background="@drawable/border_file"
+
+                                            android:gravity="center"
+                                            android:text="Status"
+                                            android:textColor="@color/black"
+                                            android:textSize="16sp"
+                                            android:textStyle="normal"/>-->
+
+                </TableRow>
+
+            </TableLayout>
+
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ContactUsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="C O N T A C T   U S"
+                android:textColor="#321487"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="FEEL FREE TO DROP US A MESSAGE"
+                android:textColor="#B23E2C70"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/tv2"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/profile2" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_toRightOf="@id/img1"
+                android:text="N A M E"
+                android:textColor="#B23E2C70"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tv3"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/edtbackground"
+                android:clickable="false"
+                android:editable="false"
+                android:hint="Name"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="#B23E2C70" />
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/edtName"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/emailicn" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtName"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="24dp"
+                android:layout_toRightOf="@id/img1"
+                android:text="E M A I L"
+                android:textColor="#B23E2C70"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tv4"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/edtbackground"
+                android:clickable="false"
+                android:editable="false"
+                android:hint="Email"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="#B23E2C70" />
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/edtEmail"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/subicn" />
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtEmail"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="24dp"
+                android:layout_toRightOf="@id/img1"
+                android:text="S U B J E C T"
+                android:textColor="#B23E2C70"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtSub"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tv5"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/edtbackground"
+                android:hint="Subject"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="#B23E2C70" />
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/edtSub"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/msgicn" />
+
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtSub"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="24dp"
+                android:layout_toRightOf="@id/img1"
+                android:text="M E S S A G E"
+                android:textColor="#B23E2C70"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtMsg"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_below="@+id/tv6"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/edtbackground"
+                android:gravity="top"
+                android:hint="Message"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="#B23E2C70" />
+
+            <android.widget.Button
+                android:id="@+id/btnSend"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/edtMsg"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/contact_send"
+                android:text="S E N D"
+                android:textColor="@color/white"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

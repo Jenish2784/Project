@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".hospital.HospitalHomeFragment"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    app:civ_border_color="@color/home"
+                    app:civ_border_width="2dp"
+                    android:src="@drawable/placeholder"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/doctorName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/profileImage"
+                    android:layout_centerVertical="true"
+                    android:text="Name"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/notification"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"/>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edtSearch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintTop_toBottomOf="@id/relativeLayout"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edt_bg"
+                android:hint="Search"
+                android:drawableLeft="@drawable/search"
+                android:paddingLeft="15dp"
+                android:textColorHint="#BAB2B2"
+                android:textColor="@color/black"/>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutConsult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/edtSearch"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:id="@+id/txtAppoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Appointments for today"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 of 10 completed"
+                    android:layout_below="@id/txtAppoint"
+                    android:textSize="20sp"
+                    android:textColor="#5E5B5B"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="2dp"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/bannerImage"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/relativeLayoutConsult"
+                app:layout_constraintStart_toStartOf="parent"
+                android:src="@drawable/banner"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/relativeLayoutCardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/bannerImage"
+                android:layout_marginTop="25dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/scheduleCardView"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/historyCardView"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/request"
+                            android:layout_gravity="center_horizontal"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Request Schedule"
+                            android:textColor="#5E5B5B"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:textSize="18sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10+ New"
+                            android:textColor="#5E5B5B"
+                            android:layout_marginTop="5dp"
+                            android:textSize="15sp"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/historyCardView"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignParentRight="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/scheduleCardView"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/history"
+                            android:layout_gravity="center_horizontal"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Consult History"
+                            android:gravity="center"
+                            android:textColor="#5E5B5B"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:textSize="18sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100 Total"
+                            android:textColor="#5E5B5B"
+                            android:layout_marginTop="5dp"
+                            android:textSize="15sp"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/patientCardView"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/doctorCardView"
+                    app:layout_constraintTop_toBottomOf="@id/scheduleCardView"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/patient_list"
+                            android:layout_gravity="center_horizontal"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Patient List"
+                            android:textColor="#5E5B5B"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:textSize="18sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20 Total"
+                            android:textColor="#5E5B5B"
+                            android:layout_marginTop="5dp"
+                            android:textSize="15sp"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/doctorCardView"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/historyCardView"
+                    app:layout_constraintStart_toEndOf="@id/patientCardView"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/appoin_report"
+                            android:layout_gravity="center_horizontal"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Doctors"
+                            android:gravity="center"
+                            android:textColor="#5E5B5B"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:textSize="18sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10"
+                            android:textColor="#5E5B5B"
+                            android:layout_marginTop="5dp"
+                            android:textSize="15sp"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/departmentCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:layout_constraintTop_toBottomOf="@id/doctorCardView"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/appoin_report"
+                            android:layout_gravity="center_horizontal"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Departments"
+                            android:gravity="center"
+                            android:textColor="#5E5B5B"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:textSize="18sp"/>
+                        <TextView
+                            android:id="@+id/departmentCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#5E5B5B"
+                            android:layout_marginTop="5dp"
+                            android:textSize="15sp"/>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</FrameLayout>

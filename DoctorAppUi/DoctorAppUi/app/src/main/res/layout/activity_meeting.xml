@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MeetingActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvParticipants"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/btnMic"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/miceenable"
+            android:text="Mic"/>
+
+        <ImageView
+            android:id="@+id/btnLeave"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/btnMic"
+            android:src="@drawable/callleave"
+            android:text="Leave"/>
+
+        <ImageView
+            android:id="@+id/btnWebcam"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/btnLeave"
+            android:src="@drawable/camdisable"
+            android:text="Webcam" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

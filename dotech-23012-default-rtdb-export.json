@@ -1,0 +1,2010 @@
+{
+  "Appointment": {
+    "-NPXalsmvAgv4cbRmz4r": {
+      "address": "Ahmedabad",
+      "birthDate": "",
+      "bloodGroup": "",
+      "category": "Dentist",
+      "currentDate": "2023-03-02",
+      "currentTime": "07 : 24 PM",
+      "date": "2023-03-02",
+      "doctorName": "Chintu",
+      "doctorProfileImage": "",
+      "gender": "",
+      "height": "",
+      "hospitalEmail": "patelchintan1278@gmail.com",
+      "hospitalId": "gvGzDGsOSQhNaJXBdeugEpDtGtE2",
+      "hospitalName": "Hospital",
+      "mobileNumber": "8866433948",
+      "paymentId": "{\"error\":{\"code\":\"BAD_REQUEST_ERROR\",\"description\":\"Payment processing cancelled by user\",\"source\":\"customer\",\"step\":\"payment_authentication\",\"reason\":\"payment_cancelled\",\"metadata\":{}}}",
+      "paymentStatus": "0",
+      "problem": "wawre",
+      "problemImage": "",
+      "profileImage": "",
+      "status": "0",
+      "time": "09:00 AM",
+      "totalAmount": "590",
+      "type": "Online Appointment",
+      "userEmail": "bodarkelvin2002@gmail.com",
+      "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+      "userName": "Kelvin Bodar",
+      "weight": ""
+    },
+    "-NPXbKZUZRcOvLJTA3Z4": {
+      "address": "Ahmedabad",
+      "birthDate": "",
+      "bloodGroup": "",
+      "category": "Dentist",
+      "currentDate": "2023-03-02",
+      "currentTime": "07 : 27 PM",
+      "date": "2023-03-02",
+      "doctorName": "Chintu",
+      "doctorProfileImage": "",
+      "gender": "",
+      "height": "",
+      "hospitalEmail": "patelchintan1278@gmail.com",
+      "hospitalId": "gvGzDGsOSQhNaJXBdeugEpDtGtE2",
+      "hospitalName": "Hospital",
+      "mobileNumber": "8866433948",
+      "paymentId": "pay_LMgF2eccPQZovi",
+      "paymentStatus": "1",
+      "problem": "efef",
+      "problemImage": "",
+      "profileImage": "",
+      "status": "0",
+      "time": "01:00 PM",
+      "totalAmount": "590",
+      "type": "Online Appointment",
+      "userEmail": "bodarkelvin2002@gmail.com",
+      "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+      "userName": "Kelvin Bodar",
+      "weight": ""
+    },
+    "-NPggRYolcfH0KtC-MgU": {
+      "address": "Ahmedabad",
+      "birthDate": "23/11/2002",
+      "bloodGroup": "A-",
+      "category": "Dentist",
+      "currentDate": "2023-03-04",
+      "currentTime": "06 : 25 PM",
+      "date": "2023-03-02",
+      "doctorName": "Chintu",
+      "doctorProfileImage": "",
+      "gender": "male",
+      "height": "5.4",
+      "hospitalEmail": "patelchintan1278@gmail.com",
+      "hospitalId": "gvGzDGsOSQhNaJXBdeugEpDtGtE2",
+      "hospitalName": "Hospital",
+      "mobileNumber": "8866433948",
+      "paymentId": "{\"error\":{\"code\":\"BAD_REQUEST_ERROR\",\"description\":\"Invalid amount (should be passed in integer paise. Minimum value is 100 paise, i.e. ₹ 1)\",\"source\":\"customer\",\"step\":\"payment_authentication\",\"reason\":\"payment_error\",\"metadata\":{}}}",
+      "paymentStatus": "0",
+      "problem": "ydtutyj",
+      "problemImage": "",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=31659e22-6b28-43e4-a9f8-8090c2beedab",
+      "status": "0",
+      "time": "10:00 AM",
+      "totalAmount": "0",
+      "type": "Online Appointment",
+      "userEmail": "bodarkelvin2002@gmail.com",
+      "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+      "userName": "Kelvin Bodar",
+      "weight": "65"
+    },
+    "-NPggXjICgWJqvJxN9rx": {
+      "address": "Ahmedabad",
+      "birthDate": "23/11/2002",
+      "bloodGroup": "A-",
+      "category": "Dentist",
+      "currentDate": "2023-03-04",
+      "currentTime": "06 : 26 PM",
+      "date": "2023-03-02",
+      "doctorName": "Chintu",
+      "doctorProfileImage": "",
+      "gender": "male",
+      "height": "5.4",
+      "hospitalEmail": "patelchintan1278@gmail.com",
+      "hospitalId": "gvGzDGsOSQhNaJXBdeugEpDtGtE2",
+      "hospitalName": "Hospital",
+      "mobileNumber": "8866433948",
+      "paymentId": "{\"error\":{\"code\":\"BAD_REQUEST_ERROR\",\"description\":\"Invalid amount (should be passed in integer paise. Minimum value is 100 paise, i.e. ₹ 1)\",\"source\":\"customer\",\"step\":\"payment_authentication\",\"reason\":\"payment_error\",\"metadata\":{}}}",
+      "paymentStatus": "0",
+      "problem": "hgcugcjy",
+      "problemImage": "",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=31659e22-6b28-43e4-a9f8-8090c2beedab",
+      "status": "0",
+      "time": "09:00 AM",
+      "totalAmount": "0",
+      "type": "Physical Appointment",
+      "userEmail": "bodarkelvin2002@gmail.com",
+      "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+      "userName": "Kelvin Bodar",
+      "weight": "65"
+    },
+    "-NPgh6vb0WdnT6yW9-rz": {
+      "address": "Ahmedabad",
+      "birthDate": "23/11/2002",
+      "bloodGroup": "A-",
+      "category": "Dentist",
+      "currentDate": "2023-03-04",
+      "currentTime": "06 : 28 PM",
+      "date": "2023-03-02",
+      "doctorName": "Chintu",
+      "doctorProfileImage": "",
+      "gender": "male",
+      "height": "5.4",
+      "hospitalEmail": "patelchintan1278@gmail.com",
+      "hospitalId": "gvGzDGsOSQhNaJXBdeugEpDtGtE2",
+      "hospitalName": "Hospital",
+      "mobileNumber": "8866433948",
+      "paymentId": "{\"error\":{\"code\":\"BAD_REQUEST_ERROR\",\"description\":\"Invalid amount (should be passed in integer paise. Minimum value is 100 paise, i.e. ₹ 1)\",\"source\":\"customer\",\"step\":\"payment_authentication\",\"reason\":\"payment_error\",\"metadata\":{}}}",
+      "paymentStatus": "0",
+      "problem": "yyfudty",
+      "problemImage": "",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=31659e22-6b28-43e4-a9f8-8090c2beedab",
+      "status": "0",
+      "time": "10:00 AM",
+      "totalAmount": "302",
+      "type": "Physical Appointment",
+      "userEmail": "bodarkelvin2002@gmail.com",
+      "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+      "userName": "Kelvin Bodar",
+      "weight": "65"
+    },
+    "-NPgifjXudQZnUq4lnW7": {
+      "address": "Ahmedabad",
+      "birthDate": "23/11/2002",
+      "bloodGroup": "A-",
+      "category": "Dentist",
+      "currentDate": "2023-03-04",
+      "currentTime": "06 : 35 PM",
+      "date": "2023-03-02",
+      "doctorName": "Chintu",
+      "doctorProfileImage": "",
+      "gender": "male",
+      "height": "5.4",
+      "hospitalEmail": "patelchintan1278@gmail.com",
+      "hospitalId": "gvGzDGsOSQhNaJXBdeugEpDtGtE2",
+      "hospitalName": "Hospital",
+      "mobileNumber": "8866433948",
+      "paymentId": "pay_LNSQgAerT5Zr7L",
+      "paymentStatus": "1",
+      "problem": "dvsdfdfg",
+      "problemImage": "",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=31659e22-6b28-43e4-a9f8-8090c2beedab",
+      "status": "0",
+      "time": "10:00 AM",
+      "totalAmount": "302",
+      "type": "Online Appointment",
+      "userEmail": "bodarkelvin2002@gmail.com",
+      "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+      "userName": "Kelvin Bodar",
+      "weight": "65"
+    },
+    "-NPhJjgDmJvy6b4PYrPj": {
+      "address": "Ahmedabad",
+      "birthDate": "23/11/2002",
+      "bloodGroup": "A-",
+      "category": "Dentist",
+      "currentDate": "2023-03-04",
+      "currentTime": "09 : 22 PM",
+      "date": "2023-03-02",
+      "doctorName": "Chintu",
+      "doctorProfileImage": "",
+      "gender": "male",
+      "height": "5.4",
+      "hospitalEmail": "patelchintan1278@gmail.com",
+      "hospitalId": "gvGzDGsOSQhNaJXBdeugEpDtGtE2",
+      "hospitalName": "Hospital",
+      "mobileNumber": "8866433948",
+      "paymentId": "pay_LNVGMNH4tKDB0T",
+      "paymentStatus": "1",
+      "problem": "hxhxh",
+      "problemImage": "",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=79c63696-b8cb-4d86-aec0-c24ecc4112f1",
+      "status": "0",
+      "time": "11:00 AM",
+      "totalAmount": "302",
+      "type": "Online Appointment",
+      "userEmail": "bodarkelvin2002@gmail.com",
+      "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+      "userName": "Kelvin Bodar",
+      "weight": "65"
+    },
+    "-NPhOZqYyVJyXxVyeQw2": {
+      "address": "Ahmedabad",
+      "birthDate": "23/11/2002",
+      "bloodGroup": "A-",
+      "category": "Dentist",
+      "currentDate": "2023-03-04",
+      "currentTime": "09 : 43 pm",
+      "date": "2023-03-02",
+      "doctorName": "Chintu",
+      "doctorProfileImage": "",
+      "gender": "male",
+      "height": "5.4",
+      "hospitalEmail": "patelchintan1278@gmail.com",
+      "hospitalId": "gvGzDGsOSQhNaJXBdeugEpDtGtE2",
+      "hospitalName": "Hospital",
+      "mobileNumber": "8866433948",
+      "paymentId": "pay_LNVcegwltWNk97",
+      "paymentStatus": "1",
+      "problem": "jsjsj",
+      "problemImage": "",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=79c63696-b8cb-4d86-aec0-c24ecc4112f1",
+      "status": "0",
+      "time": "12:00 PM",
+      "totalAmount": "302",
+      "type": "Online Appointment",
+      "userEmail": "bodarkelvin2002@gmail.com",
+      "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+      "userName": "Kelvin Bodar",
+      "weight": "65"
+    },
+    "-NPhPZonwDOPP7O4eMjG": {
+      "address": "Ahmedabad",
+      "birthDate": "23/11/2002",
+      "bloodGroup": "A-",
+      "category": "Dentist",
+      "currentDate": "2023-03-04",
+      "currentTime": "09 : 47 pm",
+      "date": "2023-03-02",
+      "doctorName": "Chintu",
+      "doctorProfileImage": "",
+      "gender": "male",
+      "height": "5.4",
+      "hospitalEmail": "patelchintan1278@gmail.com",
+      "hospitalId": "gvGzDGsOSQhNaJXBdeugEpDtGtE2",
+      "hospitalName": "Hospital",
+      "mobileNumber": "8866433948",
+      "paymentId": "pay_LNVhG95A4Z7KPd",
+      "paymentStatus": "1",
+      "problem": "skbsh",
+      "problemImage": "",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=79c63696-b8cb-4d86-aec0-c24ecc4112f1",
+      "status": "0",
+      "time": "09:00 AM",
+      "totalAmount": "302",
+      "type": "Physical Appointment",
+      "userEmail": "bodarkelvin2002@gmail.com",
+      "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+      "userName": "Kelvin Bodar",
+      "weight": "65"
+    }
+  },
+  "Chats": {
+    "-NPXbZn9KAltOmKy8ZWf": {
+      "-NPXbqsiEH6o9zlRxjEh": {
+        "message": "bdbda",
+        "timeStamp": 1677765598485,
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1"
+      },
+      "-NPXbrqNuRw6rVNyVKSO": {
+        "message": "hello",
+        "timeStamp": 1677765606420,
+        "userId": "Su9h16LG8AR76qmOWy9jR7QMBca2"
+      },
+      "-NPXbx3czPFyDVTZxWR5": {
+        "message": "sk",
+        "timeStamp": 1677765623821,
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1"
+      },
+      "-NPXbye6AtckP0TbzORU": {
+        "message": "sds",
+        "timeStamp": 1677765630314,
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1"
+      },
+      "-NPXbyujQMZhamS-y22Y": {
+        "message": "sdfsdfs",
+        "timeStamp": 1677765631377,
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1"
+      },
+      "-NPXbz71y7y6PLJZ_T8r": {
+        "message": "dfsfsd",
+        "timeStamp": 1677765632232,
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1"
+      },
+      "-NPXbzInKkhEN8uZxh8U": {
+        "message": "fsfd",
+        "timeStamp": 1677765632985,
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1"
+      },
+      "-NPXbznNSsLc5kGrjVuI": {
+        "message": "sdf",
+        "timeStamp": 1677765635007,
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1"
+      }
+    },
+    "-NPhNwBVDyJGI7UCil4U": {
+      "-NnTbn1HNwO-SBmTEmHV": {
+        "message": "fh",
+        "timeStamp": 1704542018081,
+        "userId": "Su9h16LG8AR76qmOWy9jR7QMBca2"
+      }
+    },
+    "-NX8zIU3Pr_DBDC7o-E_": {
+      "-NX8zNMahovKDdn8M3Q_": {
+        "message": "jkj",
+        "timeStamp": 1685941626051,
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1"
+      }
+    },
+    "-NYaP4siyeZUpa5ToawN": {
+      "-NYaPAZYK8OYAT54_RFp": {
+        "message": "hyy",
+        "timeStamp": 1687492802407,
+        "userId": "Su9h16LG8AR76qmOWy9jR7QMBca2"
+      },
+      "-NYaPCDuEb6tdZCVx1A4": {
+        "message": "huiii",
+        "timeStamp": 1687492810685,
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1"
+      }
+    },
+    "QM8WB8OYCkVGSMaoybAOPalevWq1Su9h16LG8AR76qmOWy9jR7QMBca2": {
+      "-NPXbqxD_U7NsnKwgO5C": {
+        "message": "bdbda",
+        "timeStamp": 1677765598485,
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1"
+      },
+      "-NPXbrziO-m3DjV760T0": {
+        "message": "hello",
+        "timeStamp": 1677765606420,
+        "userId": "Su9h16LG8AR76qmOWy9jR7QMBca2"
+      },
+      "-NPXbx8nnynI2hcdWrKi": {
+        "message": "sk",
+        "timeStamp": 1677765623821,
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1"
+      },
+      "-NPXbyibYOoMaigJ7jrg": {
+        "message": "sds",
+        "timeStamp": 1677765630314,
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1"
+      },
+      "-NPXbz-NSIx4cud7-vVv": {
+        "message": "sdfsdfs",
+        "timeStamp": 1677765631377,
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1"
+      },
+      "-NPXbzCFQrhmhlJmMeRG": {
+        "message": "dfsfsd",
+        "timeStamp": 1677765632232,
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1"
+      },
+      "-NPXbzNHB-TO8wCG3Fpr": {
+        "message": "fsfd",
+        "timeStamp": 1677765632985,
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1"
+      },
+      "-NPXbzsC75yCw2Unawcx": {
+        "message": "sdf",
+        "timeStamp": 1677765635007,
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1"
+      },
+      "-NX8zNR41yG2tVm1Jxds": {
+        "message": "jkj",
+        "timeStamp": 1685941626051,
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1"
+      },
+      "-NYaPAjgI1Tfy44NgFYQ": {
+        "message": "hyy",
+        "timeStamp": 1687492802407,
+        "userId": "Su9h16LG8AR76qmOWy9jR7QMBca2"
+      },
+      "-NYaPCP4bTjLMkh13zGj": {
+        "message": "huiii",
+        "timeStamp": 1687492810685,
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1"
+      },
+      "-NnTbnAZ0TrKzrvy4ed9": {
+        "message": "fh",
+        "timeStamp": 1704542018081,
+        "userId": "Su9h16LG8AR76qmOWy9jR7QMBca2"
+      }
+    },
+    "Su9h16LG8AR76qmOWy9jR7QMBca2QM8WB8OYCkVGSMaoybAOPalevWq1": {
+      "-NPXbr0ngiRdVOrAtR59": {
+        "message": "bdbda",
+        "timeStamp": 1677765598485,
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1"
+      },
+      "-NPXbrv7XMFy7o9brcbW": {
+        "message": "hello",
+        "timeStamp": 1677765606420,
+        "userId": "Su9h16LG8AR76qmOWy9jR7QMBca2"
+      },
+      "-NPXbxDd8v5yHwvnj-Zy": {
+        "message": "sk",
+        "timeStamp": 1677765623821,
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1"
+      },
+      "-NPXbyngamVpO8d4It4y": {
+        "message": "sds",
+        "timeStamp": 1677765630314,
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1"
+      },
+      "-NPXbzCDD164YgMNBnc3": {
+        "message": "sdfsdfs",
+        "timeStamp": 1677765631377,
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1"
+      },
+      "-NPXbzGw1k3XcYIux3OE": {
+        "message": "dfsfsd",
+        "timeStamp": 1677765632232,
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1"
+      },
+      "-NPXbzVsxjRAgQIkfTUZ": {
+        "message": "fsfd",
+        "timeStamp": 1677765632985,
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1"
+      },
+      "-NPXbzx0FxFUjMo7tnZX": {
+        "message": "sdf",
+        "timeStamp": 1677765635007,
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1"
+      },
+      "-NX8zNVTmkpSJefYyuS1": {
+        "message": "jkj",
+        "timeStamp": 1685941626051,
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1"
+      },
+      "-NYaPAemHfdURzEmcQWa": {
+        "message": "hyy",
+        "timeStamp": 1687492802407,
+        "userId": "Su9h16LG8AR76qmOWy9jR7QMBca2"
+      },
+      "-NYaPCYuGnTPCS-841t-": {
+        "message": "huiii",
+        "timeStamp": 1687492810685,
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1"
+      },
+      "-NnTbn60TXwuwr0TjKao": {
+        "message": "fh",
+        "timeStamp": 1704542018081,
+        "userId": "Su9h16LG8AR76qmOWy9jR7QMBca2"
+      }
+    }
+  },
+  "Consultation": {
+    "-NPXbZn9KAltOmKy8ZWf": {
+      "address": "Nikol",
+      "birthDate": "",
+      "bloodGroup": "",
+      "category": "Dentist",
+      "currentDate": "2023-03-02",
+      "currentTime": "07 : 28 PM",
+      "date": "2023-03-02",
+      "doctorId": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+      "doctorName": "Chintan patel",
+      "doctorProfileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/profile_image%2FSu9h16LG8AR76qmOWy9jR7QMBca2?alt=media&token=128519a5-7348-48b9-8bc5-3eb2173289c8",
+      "gender": "",
+      "height": "",
+      "meetLink": "",
+      "mobileNumber": "8866433948",
+      "paymentId": "pay_LMgG95RrnlAw1s",
+      "paymentStatus": "1",
+      "problem": "gyf8td",
+      "problemImage": "",
+      "profileImage": "",
+      "status": "1",
+      "time": "04:00 PM",
+      "totalAmount": "236",
+      "type": "Chat Consultation",
+      "userEmail": "bodarkelvin2002@gmail.com",
+      "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+      "userName": "Kelvin Bodar",
+      "weight": ""
+    },
+    "-NPghQBWsBl9QBkfxq05": {
+      "address": "Nikol",
+      "birthDate": "23/11/2002",
+      "bloodGroup": "A-",
+      "category": "Dentist",
+      "currentDate": "2023-03-04",
+      "currentTime": "06 : 30 PM",
+      "date": "2023-03-02",
+      "doctorId": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+      "doctorName": "Chintan patel",
+      "doctorProfileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/profile_image%2FSu9h16LG8AR76qmOWy9jR7QMBca2?alt=media&token=128519a5-7348-48b9-8bc5-3eb2173289c8",
+      "gender": "male",
+      "height": "5.4",
+      "meetLink": "",
+      "mobileNumber": "8866433948",
+      "paymentId": "pay_LNSKrq9NZGXdhs",
+      "paymentStatus": "1",
+      "problem": "dfitydiiy",
+      "problemImage": "",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=31659e22-6b28-43e4-a9f8-8090c2beedab",
+      "status": "Accept",
+      "time": "10:00 AM",
+      "totalAmount": "236",
+      "type": "Chat Consultation",
+      "userEmail": "bodarkelvin2002@gmail.com",
+      "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+      "userName": "Kelvin Bodar",
+      "weight": "65"
+    },
+    "-NPgjxIwREed-Lc7My2l": {
+      "address": "Mars",
+      "birthDate": "23/11/2002",
+      "bloodGroup": "A-",
+      "category": "Dentist",
+      "currentDate": "2023-03-04",
+      "currentTime": "06 : 41 pm",
+      "date": "2023-03-04",
+      "doctorId": "zoETxgQdjVOqdp9dVpjTQhLLrfz2",
+      "doctorName": "Jevin",
+      "doctorProfileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/profile_image%2FzoETxgQdjVOqdp9dVpjTQhLLrfz2?alt=media&token=3ad5a66e-d1c4-479e-a33f-3e6f1db589ea",
+      "gender": "male",
+      "height": "5.4",
+      "meetLink": "eou8-6f0s-kr9g",
+      "mobileNumber": "8866433948",
+      "paymentId": "pay_LNSWZBIuGUPCAi",
+      "paymentStatus": "1",
+      "problem": "r7ruf",
+      "problemImage": "",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=79c63696-b8cb-4d86-aec0-c24ecc4112f1",
+      "status": "1",
+      "time": "01:00 PM",
+      "totalAmount": "236",
+      "type": "Video Consultation",
+      "userEmail": "bodarkelvin2002@gmail.com",
+      "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+      "userName": "Kelvin Bodar",
+      "weight": "65"
+    },
+    "-NPhJwIqzOqe2vGuxigb": {
+      "address": "Nikol",
+      "birthDate": "23/11/2002",
+      "bloodGroup": "A-",
+      "category": "Dentist",
+      "currentDate": "2023-03-04",
+      "currentTime": "09 : 23 PM",
+      "date": "2023-03-02",
+      "doctorId": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+      "doctorName": "Chintan patel",
+      "doctorProfileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/profile_image%2FSu9h16LG8AR76qmOWy9jR7QMBca2?alt=media&token=128519a5-7348-48b9-8bc5-3eb2173289c8",
+      "gender": "male",
+      "height": "5.4",
+      "meetLink": "",
+      "mobileNumber": "8866433948",
+      "paymentId": "pay_LNVHHDG3ADHAXf",
+      "paymentStatus": "1",
+      "problem": "xvhx",
+      "problemImage": "",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=79c63696-b8cb-4d86-aec0-c24ecc4112f1",
+      "status": "0",
+      "time": "02:00 PM",
+      "totalAmount": "236",
+      "type": "Chat Consultation",
+      "userEmail": "bodarkelvin2002@gmail.com",
+      "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+      "userName": "Kelvin Bodar",
+      "weight": "65"
+    },
+    "-NPhNwBVDyJGI7UCil4U": {
+      "address": "Nikol",
+      "birthDate": "23/11/2002",
+      "bloodGroup": "A-",
+      "category": "Dentist",
+      "currentDate": "2023-03-04",
+      "currentTime": "09 : 40 pm",
+      "date": "2023-03-02",
+      "doctorId": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+      "doctorName": "Chintan patel",
+      "doctorProfileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/profile_image%2FSu9h16LG8AR76qmOWy9jR7QMBca2?alt=media&token=128519a5-7348-48b9-8bc5-3eb2173289c8",
+      "gender": "male",
+      "height": "5.4",
+      "meetLink": "",
+      "mobileNumber": "8866433948",
+      "paymentId": "pay_LNVZi5b3e1XtC8",
+      "paymentStatus": "1",
+      "problem": "owonsjs",
+      "problemImage": "",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=79c63696-b8cb-4d86-aec0-c24ecc4112f1",
+      "status": "1",
+      "time": "09:00 AM",
+      "totalAmount": "236",
+      "type": "Chat Consultation",
+      "userEmail": "bodarkelvin2002@gmail.com",
+      "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+      "userName": "Kelvin Bodar",
+      "weight": "65"
+    },
+    "-NPkhoylhycxa3hb6jxC": {
+      "address": "Nikol",
+      "birthDate": "23/11/2002",
+      "bloodGroup": "A-",
+      "category": "Dentist",
+      "currentDate": "2023-03-05",
+      "currentTime": "01 : 10 pm",
+      "date": "2023-03-05",
+      "doctorId": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+      "doctorName": "Chintan patel",
+      "doctorProfileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/profile_image%2FSu9h16LG8AR76qmOWy9jR7QMBca2?alt=media&token=128519a5-7348-48b9-8bc5-3eb2173289c8",
+      "gender": "male",
+      "height": "5.4",
+      "meetLink": "i29q-ckox-ai98",
+      "mobileNumber": "8866433948",
+      "paymentId": "pay_LNlQCsun4a9BkN",
+      "paymentStatus": "1",
+      "problem": "yij",
+      "problemImage": "",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=9251bf40-33e5-4ddf-ac2a-df0000abeb74",
+      "status": "1",
+      "time": "02:00 PM",
+      "totalAmount": "531",
+      "type": "Video Consultation",
+      "userEmail": "bodarkelvin2002@gmail.com",
+      "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+      "userName": "Kelvin Bodar",
+      "weight": "65"
+    },
+    "-NPtd6KFluKJi-aqF-AN": {
+      "address": "Nikol",
+      "birthDate": "23/11/2002",
+      "bloodGroup": "A-",
+      "category": "Dentist",
+      "currentDate": "2023-03-07",
+      "currentTime": "06 : 46 AM",
+      "date": "2023-03-05",
+      "doctorId": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+      "doctorName": "Chintan patel",
+      "doctorProfileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/profile_image%2FSu9h16LG8AR76qmOWy9jR7QMBca2?alt=media&token=128519a5-7348-48b9-8bc5-3eb2173289c8",
+      "gender": "male",
+      "height": "5.4",
+      "meetLink": "",
+      "mobileNumber": "8866433948",
+      "paymentId": "{\"error\":{\"code\":\"BAD_REQUEST_ERROR\",\"description\":\"Payment processing cancelled by user\",\"source\":\"customer\",\"step\":\"payment_authentication\",\"reason\":\"payment_cancelled\",\"metadata\":{}}}",
+      "paymentStatus": "0",
+      "problem": "xhch",
+      "problemImage": "",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=79c63696-b8cb-4d86-aec0-c24ecc4112f1",
+      "status": "0",
+      "time": "09:00 AM",
+      "totalAmount": "531",
+      "type": "Video Consultation",
+      "userEmail": "bodarkelvin2002@gmail.com",
+      "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+      "userName": "Kelvin Bodar",
+      "weight": "65"
+    },
+    "-NSJwxywPIu0NFvTPN8b": {
+      "address": "Nikol",
+      "birthDate": "23/11/2002",
+      "bloodGroup": "A-",
+      "category": "Dentist",
+      "currentDate": "2023-04-06",
+      "currentTime": "10 : 34 am",
+      "date": "2023-04-05",
+      "doctorId": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+      "doctorName": "Chintan patel",
+      "doctorProfileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/profile_image%2FSu9h16LG8AR76qmOWy9jR7QMBca2?alt=media&token=128519a5-7348-48b9-8bc5-3eb2173289c8",
+      "gender": "male",
+      "height": "5.4",
+      "meetLink": "7hi1-1w7y-pg6h",
+      "mobileNumber": "8866433948",
+      "paymentId": "pay_LaNr8SHsiGEvc6",
+      "paymentStatus": "1",
+      "problem": "abc",
+      "problemImage": "",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=9251bf40-33e5-4ddf-ac2a-df0000abeb74",
+      "status": "Accept",
+      "time": "12:00 PM",
+      "totalAmount": "531",
+      "type": "Video Consultation",
+      "userEmail": "bodarkelvin2002@gmail.com",
+      "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+      "userName": "Kelvin Bodar",
+      "weight": "65"
+    },
+    "-NUeHmR28ATmydtZz1tr": {
+      "address": "Nikol",
+      "birthDate": "23/11/2002",
+      "bloodGroup": "A-",
+      "category": "Dentist",
+      "currentDate": "2023-05-05",
+      "currentTime": "10 : 33 am",
+      "date": "2023-05-05",
+      "doctorId": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+      "doctorName": "Chintan patel",
+      "doctorProfileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/profile_image%2FSu9h16LG8AR76qmOWy9jR7QMBca2?alt=media&token=128519a5-7348-48b9-8bc5-3eb2173289c8",
+      "gender": "male",
+      "height": "5.4",
+      "meetLink": "xvrd-94iz-r6po",
+      "mobileNumber": "8866433948",
+      "paymentId": "pay_LlrKHoYNG7TL9w",
+      "paymentStatus": "1",
+      "problem": "jeken",
+      "problemImage": "",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=9251bf40-33e5-4ddf-ac2a-df0000abeb74",
+      "status": "Accept",
+      "time": "09:00 AM",
+      "totalAmount": "531",
+      "type": "Video Consultation",
+      "userEmail": "bodarkelvin2002@gmail.com",
+      "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+      "userName": "Kelvin Bodar",
+      "weight": "65"
+    },
+    "-NX8vaiZgWT5I8iGKhyN": {
+      "address": "Nikol",
+      "birthDate": "23/11/2002",
+      "bloodGroup": "A-",
+      "category": "Dentist",
+      "currentDate": "2023-06-05",
+      "currentTime": "10 : 30 am",
+      "date": "2023-06-05",
+      "doctorId": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+      "doctorName": "Chintan patel",
+      "doctorProfileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/profile_image%2FSu9h16LG8AR76qmOWy9jR7QMBca2?alt=media&token=128519a5-7348-48b9-8bc5-3eb2173289c8",
+      "gender": "male",
+      "height": "5.4",
+      "meetLink": "",
+      "mobileNumber": "8866433948",
+      "paymentId": "pay_Ly7qo6XwR1heVn",
+      "paymentStatus": "1",
+      "problem": "ohhh",
+      "problemImage": "",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=9251bf40-33e5-4ddf-ac2a-df0000abeb74",
+      "status": "0",
+      "time": "09:00 AM",
+      "totalAmount": "236",
+      "type": "Chat Consultation",
+      "userEmail": "bodarkelvin2002@gmail.com",
+      "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+      "userName": "Kelvin Bodar",
+      "weight": "65"
+    },
+    "-NX8yprQns9Ibwc6lJaf": {
+      "address": "Nikol",
+      "birthDate": "23/11/2002",
+      "bloodGroup": "A-",
+      "category": "Dentist",
+      "currentDate": "2023-06-05",
+      "currentTime": "10 : 34 AM",
+      "date": "2023-06-05",
+      "doctorId": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+      "doctorName": "Chintan patel",
+      "doctorProfileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/profile_image%2FSu9h16LG8AR76qmOWy9jR7QMBca2?alt=media&token=128519a5-7348-48b9-8bc5-3eb2173289c8",
+      "gender": "male",
+      "height": "5.4",
+      "meetLink": "24mg-zxzp-ey8l",
+      "mobileNumber": "8866433948",
+      "paymentId": "pay_Ly85pPidYVeqRq",
+      "paymentStatus": "1",
+      "problem": "hvkhk",
+      "problemImage": "",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=9251bf40-33e5-4ddf-ac2a-df0000abeb74",
+      "status": "Accept",
+      "time": "11:00 AM",
+      "totalAmount": "531",
+      "type": "Video Consultation",
+      "userEmail": "bodarkelvin2002@gmail.com",
+      "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+      "userName": "Kelvin Bodar",
+      "weight": "65"
+    },
+    "-NX8zIU3Pr_DBDC7o-E_": {
+      "address": "Nikol",
+      "birthDate": "23/11/2002",
+      "bloodGroup": "A-",
+      "category": "Dentist",
+      "currentDate": "2023-06-05",
+      "currentTime": "10 : 36 AM",
+      "date": "2023-06-05",
+      "doctorId": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+      "doctorName": "Chintan patel",
+      "doctorProfileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/profile_image%2FSu9h16LG8AR76qmOWy9jR7QMBca2?alt=media&token=128519a5-7348-48b9-8bc5-3eb2173289c8",
+      "gender": "male",
+      "height": "5.4",
+      "meetLink": "",
+      "mobileNumber": "8866433948",
+      "paymentId": "pay_Ly87vbqfHt1Mr1",
+      "paymentStatus": "1",
+      "problem": "iygoyugougy",
+      "problemImage": "",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=9251bf40-33e5-4ddf-ac2a-df0000abeb74",
+      "status": "Accept",
+      "time": "05:00 PM",
+      "totalAmount": "236",
+      "type": "Chat Consultation",
+      "userEmail": "bodarkelvin2002@gmail.com",
+      "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+      "userName": "Kelvin Bodar",
+      "weight": "65"
+    },
+    "-NYaO4NHkMsAIMD2Sz-y": {
+      "address": "Nikol",
+      "birthDate": "23/11/2002",
+      "bloodGroup": "A+",
+      "category": "Dentist",
+      "currentDate": "2023-06-23",
+      "currentTime": "09 : 24 am",
+      "date": "2023-06-22",
+      "doctorId": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+      "doctorName": "Chintan patel",
+      "doctorProfileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/profile_image%2FSu9h16LG8AR76qmOWy9jR7QMBca2?alt=media&token=128519a5-7348-48b9-8bc5-3eb2173289c8",
+      "gender": "male",
+      "height": "5.4",
+      "meetLink": "",
+      "mobileNumber": "8866433948",
+      "paymentId": "net::ERR_CONNECTION_TIMED_OUT",
+      "paymentStatus": "0",
+      "problem": "tav",
+      "problemImage": "",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=9251bf40-33e5-4ddf-ac2a-df0000abeb74",
+      "status": "0",
+      "time": "09:00 AM",
+      "totalAmount": "531",
+      "type": "Video Consultation",
+      "userEmail": "bodarkelvin2002@gmail.com",
+      "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+      "userName": "Kelvin Bodar",
+      "weight": "65"
+    },
+    "-NYaOX07Q8xezwYfe88m": {
+      "address": "Nikol",
+      "birthDate": "23/11/2002",
+      "bloodGroup": "A+",
+      "category": "Dentist",
+      "currentDate": "2023-06-23",
+      "currentTime": "09 : 26 am",
+      "date": "2023-06-22",
+      "doctorId": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+      "doctorName": "Chintan patel",
+      "doctorProfileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/profile_image%2FSu9h16LG8AR76qmOWy9jR7QMBca2?alt=media&token=128519a5-7348-48b9-8bc5-3eb2173289c8",
+      "gender": "male",
+      "height": "5.4",
+      "meetLink": "",
+      "mobileNumber": "8866433948",
+      "paymentId": "pay_M5ENEqNxv4bvj1",
+      "paymentStatus": "1",
+      "problem": "ujnaa",
+      "problemImage": "",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=9251bf40-33e5-4ddf-ac2a-df0000abeb74",
+      "status": "1",
+      "time": "09:00 AM",
+      "totalAmount": "531",
+      "type": "Video Consultation",
+      "userEmail": "bodarkelvin2002@gmail.com",
+      "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+      "userName": "Kelvin Bodar",
+      "weight": "65"
+    },
+    "-NYaP4siyeZUpa5ToawN": {
+      "address": "Nikol",
+      "birthDate": "23/11/2002",
+      "bloodGroup": "A+",
+      "category": "Dentist",
+      "currentDate": "2023-06-23",
+      "currentTime": "09 : 29 am",
+      "date": "2023-06-22",
+      "doctorId": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+      "doctorName": "Chintan patel",
+      "doctorProfileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/profile_image%2FSu9h16LG8AR76qmOWy9jR7QMBca2?alt=media&token=128519a5-7348-48b9-8bc5-3eb2173289c8",
+      "gender": "male",
+      "height": "5.4",
+      "meetLink": "",
+      "mobileNumber": "8866433948",
+      "paymentId": "pay_M5EPrPkWK8ZFgH",
+      "paymentStatus": "1",
+      "problem": "y khu i",
+      "problemImage": "",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=9251bf40-33e5-4ddf-ac2a-df0000abeb74",
+      "status": "1",
+      "time": "10:00 AM",
+      "totalAmount": "236",
+      "type": "Chat Consultation",
+      "userEmail": "bodarkelvin2002@gmail.com",
+      "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+      "userName": "Kelvin Bodar",
+      "weight": "65"
+    },
+    "-NYaPm1lOP16FMWgSry7": {
+      "address": "Nikol",
+      "birthDate": "23/11/2002",
+      "bloodGroup": "A+",
+      "category": "Dentist",
+      "currentDate": "2023-06-23",
+      "currentTime": "09 : 31 am",
+      "date": "2023-06-23",
+      "doctorId": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+      "doctorName": "Chintan patel",
+      "doctorProfileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/profile_image%2FSu9h16LG8AR76qmOWy9jR7QMBca2?alt=media&token=128519a5-7348-48b9-8bc5-3eb2173289c8",
+      "gender": "male",
+      "height": "5.4",
+      "meetLink": "skot-t5gn-39ae",
+      "mobileNumber": "8866433948",
+      "paymentId": "pay_M5ESamIcDvli3G",
+      "paymentStatus": "1",
+      "problem": "jsksn",
+      "problemImage": "",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=9251bf40-33e5-4ddf-ac2a-df0000abeb74",
+      "status": "Accept",
+      "time": "09:00 AM",
+      "totalAmount": "531",
+      "type": "Video Consultation",
+      "userEmail": "bodarkelvin2002@gmail.com",
+      "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+      "userName": "Kelvin Bodar",
+      "weight": "65"
+    },
+    "-NYaShG3dx693KqSQ8RE": {
+      "address": "Nikol",
+      "birthDate": "23/11/2002",
+      "bloodGroup": "A+",
+      "category": "Dentist",
+      "currentDate": "2023-06-23",
+      "currentTime": "09 : 44 am",
+      "date": "2023-06-23",
+      "doctorId": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+      "doctorName": "Chintan patel",
+      "doctorProfileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/profile_image%2FSu9h16LG8AR76qmOWy9jR7QMBca2?alt=media&token=128519a5-7348-48b9-8bc5-3eb2173289c8",
+      "gender": "male",
+      "height": "5.4",
+      "meetLink": "",
+      "mobileNumber": "8866433948",
+      "paymentId": "net::ERR_CONNECTION_TIMED_OUT",
+      "paymentStatus": "0",
+      "problem": "jxjsj",
+      "problemImage": "",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=9251bf40-33e5-4ddf-ac2a-df0000abeb74",
+      "status": "0",
+      "time": "10:00 AM",
+      "totalAmount": "531",
+      "type": "Video Consultation",
+      "userEmail": "bodarkelvin2002@gmail.com",
+      "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+      "userName": "Kelvin Bodar",
+      "weight": "65"
+    },
+    "-NYaT-Q3R-nmu1ji7CuZ": {
+      "address": "Nikol",
+      "birthDate": "23/11/2002",
+      "bloodGroup": "A+",
+      "category": "Dentist",
+      "currentDate": "2023-06-23",
+      "currentTime": "09 : 46 am",
+      "date": "2023-06-23",
+      "doctorId": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+      "doctorName": "Chintan patel",
+      "doctorProfileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/profile_image%2FSu9h16LG8AR76qmOWy9jR7QMBca2?alt=media&token=128519a5-7348-48b9-8bc5-3eb2173289c8",
+      "gender": "male",
+      "height": "5.4",
+      "meetLink": "rhdk-yx1l-bwtw",
+      "mobileNumber": "8866433948",
+      "paymentId": "pay_M5EhrNjxuksZs3",
+      "paymentStatus": "1",
+      "problem": "jskns",
+      "problemImage": "",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=9251bf40-33e5-4ddf-ac2a-df0000abeb74",
+      "status": "1",
+      "time": "10:00 AM",
+      "totalAmount": "531",
+      "type": "Video Consultation",
+      "userEmail": "bodarkelvin2002@gmail.com",
+      "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+      "userName": "Kelvin Bodar",
+      "weight": "65"
+    },
+    "-NokRYRFJoaXX8wFA9TD": {
+      "address": "Nikol",
+      "birthDate": "23/11/2002",
+      "bloodGroup": "A+",
+      "category": "Dentist",
+      "currentDate": "2024-01-22",
+      "currentTime": "02 : 42 PM",
+      "date": "2024-01-23",
+      "doctorId": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+      "doctorName": "Chintan patel",
+      "doctorProfileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/profile_image%2FSu9h16LG8AR76qmOWy9jR7QMBca2?alt=media&token=128519a5-7348-48b9-8bc5-3eb2173289c8",
+      "gender": "male",
+      "height": "5.4",
+      "meetLink": "",
+      "mobileNumber": "8866433948",
+      "paymentId": "{\"code\":\"BAD_REQUEST_ERROR\",\"description\":\"Authentication failed\"}",
+      "paymentStatus": "0",
+      "problem": "trwsfd",
+      "problemImage": "",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=9251bf40-33e5-4ddf-ac2a-df0000abeb74",
+      "status": "0",
+      "time": "10:00 AM",
+      "totalAmount": "531",
+      "type": "Video Consultation",
+      "userEmail": "bodarkelvin2002@gmail.com",
+      "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+      "userName": "Kelvin Bodar",
+      "weight": "65"
+    },
+    "-NokRelucpjV_h_-cpuv": {
+      "address": "Nikol",
+      "birthDate": "23/11/2002",
+      "bloodGroup": "A+",
+      "category": "Dentist",
+      "currentDate": "2024-01-22",
+      "currentTime": "02 : 43 PM",
+      "date": "2024-01-22",
+      "doctorId": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+      "doctorName": "Chintan patel",
+      "doctorProfileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/profile_image%2FSu9h16LG8AR76qmOWy9jR7QMBca2?alt=media&token=128519a5-7348-48b9-8bc5-3eb2173289c8",
+      "gender": "male",
+      "height": "5.4",
+      "meetLink": "",
+      "mobileNumber": "8866433948",
+      "paymentId": "{\"description\":\"Authentication failed\",\"code\":\"BAD_REQUEST_ERROR\"}",
+      "paymentStatus": "0",
+      "problem": "kutjgh",
+      "problemImage": "",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=9251bf40-33e5-4ddf-ac2a-df0000abeb74",
+      "status": "0",
+      "time": "10:00 AM",
+      "totalAmount": "531",
+      "type": "Video Consultation",
+      "userEmail": "bodarkelvin2002@gmail.com",
+      "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+      "userName": "Kelvin Bodar",
+      "weight": "65"
+    }
+  },
+  "Rating": {
+    "doTech": {
+      "Su9h16LG8AR76qmOWy9jR7QMBca2": {
+        "rating": 5,
+        "ratingBy": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+        "review": "",
+        "timedAt": 1677845918976
+      },
+      "laf10b7wZHbUkQW0frMYkjzxQ4N2": {
+        "message": "",
+        "rating": 5,
+        "ratingBy": "laf10b7wZHbUkQW0frMYkjzxQ4N2",
+        "timeAt": 1677846791530
+      },
+      "zoETxgQdjVOqdp9dVpjTQhLLrfz2": {
+        "rating": 5,
+        "ratingBy": "zoETxgQdjVOqdp9dVpjTQhLLrfz2",
+        "review": "",
+        "timedAt": 1677935799398
+      }
+    },
+    "hospital_doctor": {
+      "QM8WB8OYCkVGSMaoybAOPalevWq1Su9h16LG8AR76qmOWy9jR7QMBca2": {
+        "currentDate": "2023-03-05",
+        "doctorId": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+        "message": "",
+        "rating": 5,
+        "ratingBy": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+        "timeAt": 1677977746049
+      },
+      "QM8WB8OYCkVGSMaoybAOPalevWq1null": {
+        "currentDate": "2023-03-05",
+        "message": "",
+        "rating": 5,
+        "ratingBy": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+        "timeAt": 1677977713980
+      }
+    }
+  },
+  "Users": {
+    "QM8WB8OYCkVGSMaoybAOPalevWq1": {
+      "birthDate": "23/11/2002",
+      "bloodGroup": "A+",
+      "email": "bodarkelvin2002@gmail.com",
+      "following": {
+        "Doctor": {
+          "Su9h16LG8AR76qmOWy9jR7QMBca2": {
+            "followingAt": 1687493806868,
+            "followingBy": "Su9h16LG8AR76qmOWy9jR7QMBca2"
+          },
+          "zoETxgQdjVOqdp9dVpjTQhLLrfz2": {
+            "followingAt": 1677935499104,
+            "followingBy": "zoETxgQdjVOqdp9dVpjTQhLLrfz2"
+          }
+        },
+        "Hospital": {
+          "gvGzDGsOSQhNaJXBdeugEpDtGtE2": {
+            "followingAt": 1677946671047,
+            "followingBy": "gvGzDGsOSQhNaJXBdeugEpDtGtE2"
+          }
+        }
+      },
+      "gender": "male",
+      "height": "5.4",
+      "mobile": "8866433948",
+      "name": "Kelvin Bodar",
+      "password": "123456",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=9251bf40-33e5-4ddf-ac2a-df0000abeb74",
+      "status": "1",
+      "weight": "65"
+    },
+    "laf10b7wZHbUkQW0frMYkjzxQ4N2": {
+      "birthDate": "23/11/2002",
+      "bloodGroup": "O-",
+      "email": "kelvinbodar2002@gmail.com",
+      "gender": "male",
+      "height": "56",
+      "mobile": "9188664339",
+      "name": "kb",
+      "password": "123456",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2Flaf10b7wZHbUkQW0frMYkjzxQ4N2?alt=media&token=7fa4ed6c-3c14-4a73-92d6-78ab6e9601d5",
+      "status": "1",
+      "weight": "6.9"
+    }
+  },
+  "category": {
+    "-NPXQjPRqxyYD4-OIQl4": {
+      "strCategory": "Dentist"
+    },
+    "-NPXQksJX2cplunXbOJm": {
+      "strCategory": "Orthopaedic"
+    },
+    "-NnTaZLzt9crbUeVxkW-": {
+      "strCategory": "abc"
+    }
+  },
+  "contactUs": {
+    "-NTV0kVOIM0QcDOWGsLD": {
+      "currentDate": "2023-04-21",
+      "email": "patelchintan8358@gmail.com",
+      "message": "Our services will be temporary closed from 24/4/23 to 26/4/23",
+      "mobile": "8866874647",
+      "name": "Chintan patel",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/profile_image%2FSu9h16LG8AR76qmOWy9jR7QMBca2?alt=media&token=128519a5-7348-48b9-8bc5-3eb2173289c8",
+      "status": "0",
+      "subject": "Service not worked",
+      "timeAt": 1682017027513,
+      "userId": "Su9h16LG8AR76qmOWy9jR7QMBca2"
+    }
+  },
+  "department_doctor": {
+    "gvGzDGsOSQhNaJXBdeugEpDtGtE2": {
+      "Dentist": {
+        "-NPXUw07hAdPN-2ll-iR": {
+          "category": "Dentist",
+          "emailId": "chintu@hospital.com",
+          "gender": "male",
+          "mobile_number": "8866874647",
+          "name": "Chintu",
+          "profileImage": "",
+          "timeAt": 1677763526353
+        }
+      },
+      "testing": {
+        "-NPX_GPphuurofwAOMpW": {
+          "category": "testing",
+          "emailId": "abc@gmail.com",
+          "gender": "other",
+          "mobile_number": "7668686689",
+          "name": "hcgdg",
+          "profileImage": "",
+          "timeAt": 1677764924730
+        },
+        "-NPX_GevcjYOLRAZlO2G": {
+          "category": "testing",
+          "emailId": "abc@gmail.com",
+          "gender": "other",
+          "mobile_number": "7668686689",
+          "name": "hcgdg",
+          "profileImage": "",
+          "timeAt": 1677764925761
+        }
+      }
+    }
+  },
+  "doctor and hospital": {
+    "91xArEw0ddZSVWG6XvV96RYUjM93": {
+      "accountNo": "",
+      "address": "",
+      "callAmount": "",
+      "callDescription": "",
+      "category": "",
+      "degreeImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/degree_image%2F91xArEw0ddZSVWG6XvV96RYUjM93?alt=media&token=c926ef73-495e-4aea-97a8-0593b5f1c356",
+      "degreeName": "",
+      "depositAmount": "0",
+      "emailId": "linux1271@gmail.com",
+      "ifscNo": "",
+      "mobileNumber": "9327330588",
+      "msgAmount": "",
+      "msgDescription": "",
+      "name": "jenish",
+      "password": "Test@123",
+      "profileImage": "",
+      "status": "0",
+      "totalAmount": "0",
+      "type": "hospital"
+    },
+    "MtEQBWDqYNWI2MZDcYPHWIhy7Qi1": {
+      "accountNo": "0123456789",
+      "address": "Ahmedabad",
+      "callAmount": "450",
+      "callDescription": "call",
+      "category": "Dentist",
+      "degreeImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/degree_image%2FMtEQBWDqYNWI2MZDcYPHWIhy7Qi1?alt=media&token=b5aa158e-67c1-427a-85e0-696acff3ca09",
+      "degreeName": "nathi",
+      "depositAmount": "0",
+      "emailId": "hotel2989@gmail.com",
+      "experience": "2",
+      "ifscNo": "012",
+      "mobileNumber": "8866874647",
+      "msgAmount": "700",
+      "msgDescription": "msg",
+      "name": "Hotel",
+      "password": "123456",
+      "profileImage": "",
+      "status": "shutdown",
+      "totalAmount": "0",
+      "type": "doctor"
+    },
+    "Su9h16LG8AR76qmOWy9jR7QMBca2": {
+      "accountNo": "001122334455",
+      "address": "Nikol",
+      "callAmount": "450",
+      "callDescription": "Video Call",
+      "category": "Dentist",
+      "degreeImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/degree_image%2FSu9h16LG8AR76qmOWy9jR7QMBca2?alt=media&token=822fc8cb-103e-4d58-ad2f-588bc22339b6",
+      "degreeName": "",
+      "depositAmount": "3700",
+      "emailId": "patelchintan8358@gmail.com",
+      "experience": "2",
+      "followers": {
+        "QM8WB8OYCkVGSMaoybAOPalevWq1": {
+          "followedAt": 1687493806866,
+          "followedBy": "QM8WB8OYCkVGSMaoybAOPalevWq1"
+        }
+      },
+      "ifscNo": "66778899",
+      "mobileNumber": "8866874647",
+      "msgAmount": "200",
+      "msgDescription": "SMS service",
+      "name": "Chintan patel",
+      "password": "123456",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/profile_image%2FSu9h16LG8AR76qmOWy9jR7QMBca2?alt=media&token=128519a5-7348-48b9-8bc5-3eb2173289c8",
+      "status": "1",
+      "totalAmount": "850",
+      "type": "doctor"
+    },
+    "ZHxVU6mLb5bMvVPG6nBnVSvBoqk2": {
+      "accountNo": "",
+      "address": "",
+      "callAmount": "",
+      "callDescription": "",
+      "category": "",
+      "degreeImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/degree_image%2FZHxVU6mLb5bMvVPG6nBnVSvBoqk2?alt=media&token=2edddcb6-d6c7-4e21-9811-c314caa403ea",
+      "degreeName": "DoTech",
+      "depositAmount": "0",
+      "emailId": "consultation296@gmail.com",
+      "experience": "1",
+      "ifscNo": "",
+      "mobileNumber": "8866874647",
+      "msgAmount": "",
+      "msgDescription": "",
+      "name": "DoTech",
+      "password": "dotech@123",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/profile_image%2FZHxVU6mLb5bMvVPG6nBnVSvBoqk2?alt=media&token=557e4d8f-dfd3-4a3d-92e8-cb0185014a23",
+      "status": "1",
+      "type": "admin"
+    },
+    "gvGzDGsOSQhNaJXBdeugEpDtGtE2": {
+      "accountNo": "",
+      "address": "Ahmedabad",
+      "callAmount": "500",
+      "callDescription": "video",
+      "category": "",
+      "degreeImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/degree_image%2FgvGzDGsOSQhNaJXBdeugEpDtGtE2?alt=media&token=0d32fb9c-49e1-49cb-a2a4-add061008f06",
+      "degreeName": "",
+      "department": {
+        "-NPXUaoSz_-jvB_aJH8K": {
+          "departmentIcon": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/department_icon%2FgvGzDGsOSQhNaJXBdeugEpDtGtE2%2FDentist?alt=media&token=88979acb-5f1c-454b-8885-9e21f656b0ca",
+          "departmentName": "Dentist",
+          "fees": "256",
+          "timeAt": 1677763439525
+        },
+        "-NPXUdhYfqO--xoKnVFE": {
+          "departmentIcon": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/department_icon%2FgvGzDGsOSQhNaJXBdeugEpDtGtE2%2FOrthopaedic?alt=media&token=c4d08390-6dc6-4e33-9b0f-f3a998e7fa95",
+          "departmentName": "Orthopaedic",
+          "fees": "852",
+          "timeAt": 1677763451371
+        },
+        "-NPXZxZZVeHxgwc-ebe5": {
+          "departmentIcon": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/department_icon%2FgvGzDGsOSQhNaJXBdeugEpDtGtE2%2Ftesting?alt=media&token=f2904357-2192-4dd3-b03e-addba543279a",
+          "departmentName": "testing",
+          "fees": "200",
+          "timeAt": 1677764843433
+        }
+      },
+      "depositAmount": "0",
+      "emailId": "patelchintan1278@gmail.com",
+      "experience": "4",
+      "followers": {
+        "QM8WB8OYCkVGSMaoybAOPalevWq1": {
+          "followedAt": 1677946671045,
+          "followedBy": "QM8WB8OYCkVGSMaoybAOPalevWq1"
+        }
+      },
+      "ifscNo": "",
+      "mobileNumber": "8866874647",
+      "msgAmount": "",
+      "msgDescription": "",
+      "name": "Hospital",
+      "password": "123456",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/profile_image%2FgvGzDGsOSQhNaJXBdeugEpDtGtE2?alt=media&token=f2f99978-56b0-4ab9-babe-51fa157acc38",
+      "status": "1",
+      "totalAmount": "0",
+      "type": "hospital"
+    },
+    "zoETxgQdjVOqdp9dVpjTQhLLrfz2": {
+      "accountNo": "2058006969",
+      "address": "Mars",
+      "callAmount": "200",
+      "callDescription": "consultancy",
+      "category": "Dentist",
+      "degreeImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/degree_image%2FzoETxgQdjVOqdp9dVpjTQhLLrfz2?alt=media&token=8c5eca7d-8d8a-4d52-8381-b8ea79e1a7e0",
+      "degreeName": "",
+      "depositAmount": "200",
+      "emailId": "jevinkivines@gmail.com",
+      "experience": "1",
+      "followers": {
+        "QM8WB8OYCkVGSMaoybAOPalevWq1": {
+          "followedAt": 1677935499102,
+          "followedBy": "QM8WB8OYCkVGSMaoybAOPalevWq1"
+        }
+      },
+      "ifscNo": "Imtheone567890",
+      "mobileNumber": "8154880707",
+      "msgAmount": "100",
+      "msgDescription": "Appointment",
+      "name": "Jevin",
+      "password": "123456",
+      "profileImage": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/profile_image%2FzoETxgQdjVOqdp9dVpjTQhLLrfz2?alt=media&token=3ad5a66e-d1c4-479e-a33f-3e6f1db589ea",
+      "status": "1",
+      "totalAmount": "0",
+      "type": "doctor"
+    }
+  },
+  "notification": {
+    "-NPXUw07hAdPN-2ll-iR": {
+      "-NPXbL2zsO5YQph50IIB": {
+        "consultType": "Online Appointment",
+        "currentDate": "2023-03-02",
+        "currentTime": "07 : 27 PM",
+        "date": "2023-03-02",
+        "status": "0",
+        "time": "01:00 PM",
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+        "userName": "Kelvin Bodar",
+        "userProfile": ""
+      },
+      "-NPgig6N-aad4ScPU_Jd": {
+        "consultType": "Online Appointment",
+        "currentDate": "2023-03-04",
+        "currentTime": "06 : 35 PM",
+        "date": "2023-03-02",
+        "status": "0",
+        "time": "10:00 AM",
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+        "userName": "Kelvin Bodar",
+        "userProfile": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=31659e22-6b28-43e4-a9f8-8090c2beedab"
+      },
+      "-NPhJjzQEp78EOz53afI": {
+        "consultType": "Online Appointment",
+        "currentDate": "2023-03-04",
+        "currentTime": "09 : 22 PM",
+        "date": "2023-03-02",
+        "status": "0",
+        "time": "11:00 AM",
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+        "userName": "Kelvin Bodar",
+        "userProfile": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=79c63696-b8cb-4d86-aec0-c24ecc4112f1"
+      },
+      "-NPhO__xfgduMCyvAy4V": {
+        "consultType": "Online Appointment",
+        "currentDate": "2023-03-04",
+        "currentTime": "09 : 43 pm",
+        "date": "2023-03-02",
+        "status": "0",
+        "time": "12:00 PM",
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+        "userName": "Kelvin Bodar",
+        "userProfile": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=79c63696-b8cb-4d86-aec0-c24ecc4112f1"
+      },
+      "-NPhP_aPO23hir-awZPG": {
+        "consultType": "Physical Appointment",
+        "currentDate": "2023-03-04",
+        "currentTime": "09 : 47 pm",
+        "date": "2023-03-02",
+        "status": "0",
+        "time": "09:00 AM",
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+        "userName": "Kelvin Bodar",
+        "userProfile": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=79c63696-b8cb-4d86-aec0-c24ecc4112f1"
+      }
+    },
+    "QM8WB8OYCkVGSMaoybAOPalevWq1": {
+      "-NPXbpIydWeu3BE5_2Ds": {
+        "consultType": "Chat Consultation",
+        "notificationAt": 1677765596032,
+        "notificationBy": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+        "notificationId": "-NPXbZn9KAltOmKy8ZWf",
+        "type": "Accept"
+      },
+      "-NPgkFV0qxxrsAKccTJI": {
+        "consultType": "Video Consultation",
+        "notificationAt": 1677935575148,
+        "notificationBy": "zoETxgQdjVOqdp9dVpjTQhLLrfz2",
+        "notificationId": "-NPgjxIwREed-Lc7My2l",
+        "type": "Accept"
+      },
+      "-NPkhxRMyTaJGuNC2l0c": {
+        "consultType": "Chat Consultation",
+        "notificationAt": 1678002082546,
+        "notificationBy": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+        "notificationId": "-NPghQBWsBl9QBkfxq05",
+        "type": "Accept"
+      },
+      "-NPkhyn6BVJSM_Fbxnhj": {
+        "consultType": "Video Consultation",
+        "notificationAt": 1678002088099,
+        "notificationBy": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+        "notificationId": "-NPkhoylhycxa3hb6jxC",
+        "type": "Accept"
+      },
+      "-NPkhzWSyElzcT4D4WWk": {
+        "consultType": "Video Consultation",
+        "notificationAt": 1678002091065,
+        "notificationBy": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+        "notificationId": "-NPkhoylhycxa3hb6jxC",
+        "type": "Accept"
+      },
+      "-NUeIJQWnxNqn4ZM7zPw": {
+        "consultType": "Video Consultation",
+        "notificationAt": 1683263144640,
+        "notificationBy": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+        "notificationId": "-NUeHmR28ATmydtZz1tr",
+        "type": "Accept"
+      },
+      "-NYaQj390ToC8GL26Rw3": {
+        "consultType": "Video Consultation",
+        "notificationAt": 1687493209939,
+        "notificationBy": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+        "notificationId": "-NYaPm1lOP16FMWgSry7",
+        "type": "Accept"
+      },
+      "-NYaT4IEpRy3-CesNHHd": {
+        "consultType": "Video Consultation",
+        "notificationAt": 1687493825308,
+        "notificationBy": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+        "notificationId": "-NYaT-Q3R-nmu1ji7CuZ",
+        "type": "Accept"
+      },
+      "-NYaT5SE3cWlnuMdBx_v": {
+        "consultType": "Video Consultation",
+        "notificationAt": 1687493830044,
+        "notificationBy": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+        "notificationId": "-NYaT-Q3R-nmu1ji7CuZ",
+        "type": "Accept"
+      },
+      "-NiYMWX-JniJWEW3wxU3": {
+        "consultType": "Video Consultation",
+        "notificationAt": 1699252934236,
+        "notificationBy": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+        "notificationId": "-NX8yprQns9Ibwc6lJaf",
+        "type": "Accept"
+      },
+      "-NnTbgGBwETyVxFD_hV3": {
+        "consultType": "Video Consultation",
+        "notificationAt": 1704541990364,
+        "notificationBy": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+        "notificationId": "-NSJwxywPIu0NFvTPN8b",
+        "type": "Accept"
+      },
+      "-NnTbkmF4uRAEP_RtVcg": {
+        "consultType": "Chat Consultation",
+        "notificationAt": 1704542008863,
+        "notificationBy": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+        "notificationId": "-NPhNwBVDyJGI7UCil4U",
+        "type": "Accept"
+      }
+    },
+    "Su9h16LG8AR76qmOWy9jR7QMBca2": {
+      "-NPXb_7XdJs81fA-EgH3": {
+        "consultType": "Chat Consultation",
+        "currentDate": "2023-03-02",
+        "currentTime": "07 : 28 PM",
+        "date": "2023-03-02",
+        "status": "0",
+        "time": "04:00 PM",
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+        "userName": "Kelvin Bodar",
+        "userProfile": ""
+      },
+      "-NPghQdL69pG-uhErBo1": {
+        "consultType": "Chat Consultation",
+        "currentDate": "2023-03-04",
+        "currentTime": "06 : 30 PM",
+        "date": "2023-03-02",
+        "status": "0",
+        "time": "10:00 AM",
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+        "userName": "Kelvin Bodar",
+        "userProfile": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=31659e22-6b28-43e4-a9f8-8090c2beedab"
+      },
+      "-NPhJw_6mSu-N9OxAsLi": {
+        "consultType": "Chat Consultation",
+        "currentDate": "2023-03-04",
+        "currentTime": "09 : 23 PM",
+        "date": "2023-03-02",
+        "status": "0",
+        "time": "02:00 PM",
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+        "userName": "Kelvin Bodar",
+        "userProfile": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=79c63696-b8cb-4d86-aec0-c24ecc4112f1"
+      },
+      "-NPhNx5OEH4dU-2tNSgz": {
+        "consultType": "Chat Consultation",
+        "currentDate": "2023-03-04",
+        "currentTime": "09 : 40 pm",
+        "date": "2023-03-02",
+        "status": "0",
+        "time": "09:00 AM",
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+        "userName": "Kelvin Bodar",
+        "userProfile": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=79c63696-b8cb-4d86-aec0-c24ecc4112f1"
+      },
+      "-NPkhqPOfHaycBKi2zz-": {
+        "consultType": "Video Consultation",
+        "currentDate": "2023-03-05",
+        "currentTime": "01 : 10 pm",
+        "date": "2023-03-05",
+        "status": "0",
+        "time": "02:00 PM",
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+        "userName": "Kelvin Bodar",
+        "userProfile": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=9251bf40-33e5-4ddf-ac2a-df0000abeb74"
+      },
+      "-NSJwzGvuQVBixYGz6T-": {
+        "consultType": "Video Consultation",
+        "currentDate": "2023-04-06",
+        "currentTime": "10 : 34 am",
+        "date": "2023-04-05",
+        "status": "0",
+        "time": "12:00 PM",
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+        "userName": "Kelvin Bodar",
+        "userProfile": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=9251bf40-33e5-4ddf-ac2a-df0000abeb74"
+      },
+      "-NUeHnanZqYgaEB-X5yL": {
+        "consultType": "Video Consultation",
+        "currentDate": "2023-05-05",
+        "currentTime": "10 : 33 am",
+        "date": "2023-05-05",
+        "status": "0",
+        "time": "09:00 AM",
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+        "userName": "Kelvin Bodar",
+        "userProfile": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=9251bf40-33e5-4ddf-ac2a-df0000abeb74"
+      },
+      "-NX8vbaxHtxR5b3fq5aH": {
+        "consultType": "Chat Consultation",
+        "currentDate": "2023-06-05",
+        "currentTime": "10 : 30 am",
+        "date": "2023-06-05",
+        "status": "0",
+        "time": "09:00 AM",
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+        "userName": "Kelvin Bodar",
+        "userProfile": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=9251bf40-33e5-4ddf-ac2a-df0000abeb74"
+      },
+      "-NX8yqbl0uYDz3r5sauo": {
+        "consultType": "Video Consultation",
+        "currentDate": "2023-06-05",
+        "currentTime": "10 : 34 AM",
+        "date": "2023-06-05",
+        "status": "0",
+        "time": "11:00 AM",
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+        "userName": "Kelvin Bodar",
+        "userProfile": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=9251bf40-33e5-4ddf-ac2a-df0000abeb74"
+      },
+      "-NX8zJFFxkFYBzAcji4_": {
+        "consultType": "Chat Consultation",
+        "currentDate": "2023-06-05",
+        "currentTime": "10 : 36 AM",
+        "date": "2023-06-05",
+        "status": "0",
+        "time": "05:00 PM",
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+        "userName": "Kelvin Bodar",
+        "userProfile": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=9251bf40-33e5-4ddf-ac2a-df0000abeb74"
+      },
+      "-NYaOYOuAIl2Jw9CUGKG": {
+        "consultType": "Video Consultation",
+        "currentDate": "2023-06-23",
+        "currentTime": "09 : 26 am",
+        "date": "2023-06-22",
+        "status": "0",
+        "time": "09:00 AM",
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+        "userName": "Kelvin Bodar",
+        "userProfile": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=9251bf40-33e5-4ddf-ac2a-df0000abeb74"
+      },
+      "-NYaP8qvbiBB5aoKwxdH": {
+        "consultType": "Chat Consultation",
+        "currentDate": "2023-06-23",
+        "currentTime": "09 : 29 am",
+        "date": "2023-06-22",
+        "status": "0",
+        "time": "10:00 AM",
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+        "userName": "Kelvin Bodar",
+        "userProfile": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=9251bf40-33e5-4ddf-ac2a-df0000abeb74"
+      },
+      "-NYaT2JPMJZyBitSb7Mk": {
+        "consultType": "Video Consultation",
+        "currentDate": "2023-06-23",
+        "currentTime": "09 : 46 am",
+        "date": "2023-06-23",
+        "status": "0",
+        "time": "10:00 AM",
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+        "userName": "Kelvin Bodar",
+        "userProfile": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=9251bf40-33e5-4ddf-ac2a-df0000abeb74"
+      }
+    },
+    "admin": {
+      "-NPXRFSAGu1lPawSyjyw": {
+        "notificationAt": 1677762561495,
+        "notificationBy": "Su9h16LG8AR76qmOWy9jR7QMBca2",
+        "type": "SignUp",
+        "userEmail": "patelchintan8358@gmail.com",
+        "userProfile": "",
+        "userType": "doctor"
+      },
+      "-NPXUGmn3o5JZSzQSXTd": {
+        "notificationAt": 1677763353415,
+        "notificationBy": "gvGzDGsOSQhNaJXBdeugEpDtGtE2",
+        "type": "SignUp",
+        "userEmail": "patelchintan1278@gmail.com",
+        "userProfile": "",
+        "userType": "hospital"
+      },
+      "-NPghtsD2732pfBxYEbM": {
+        "notificationAt": 1677934960155,
+        "notificationBy": "pdO64Mj7DdfJuOhKyDCCIN3LlRA3",
+        "type": "SignUp",
+        "userEmail": "chovatiyajenish54@gmail.com",
+        "userProfile": "",
+        "userType": "hospital"
+      },
+      "-NPgidRKSGwT3gLGpS1j": {
+        "notificationAt": 1677935153005,
+        "notificationBy": "zoETxgQdjVOqdp9dVpjTQhLLrfz2",
+        "type": "SignUp",
+        "userEmail": "jevinkivines@gmail.com",
+        "userProfile": "",
+        "userType": "doctor"
+      },
+      "-NX3SU1TqcDASe3PMb7U": {
+        "notificationAt": 1685849501349,
+        "notificationBy": "MtEQBWDqYNWI2MZDcYPHWIhy7Qi1",
+        "type": "SignUp",
+        "userEmail": "hotel2989@gmail.com",
+        "userProfile": "",
+        "userType": "doctor"
+      },
+      "-NnnKdFMK_B-bM5f_45W": {
+        "notificationAt": 1704889586822,
+        "notificationBy": "91xArEw0ddZSVWG6XvV96RYUjM93",
+        "type": "SignUp",
+        "userEmail": "linux1271@gmail.com",
+        "userProfile": "",
+        "userType": "hospital"
+      }
+    },
+    "zoETxgQdjVOqdp9dVpjTQhLLrfz2": {
+      "-NPgjxdFqDGv2HPJWb-o": {
+        "consultType": "Video Consultation",
+        "currentDate": "2023-03-04",
+        "currentTime": "06 : 41 pm",
+        "date": "2023-03-04",
+        "status": "0",
+        "time": "01:00 PM",
+        "userId": "QM8WB8OYCkVGSMaoybAOPalevWq1",
+        "userName": "Kelvin Bodar",
+        "userProfile": "https://firebasestorage.googleapis.com/v0/b/dotech-23012.appspot.com/o/user_profile_image%2FQM8WB8OYCkVGSMaoybAOPalevWq1?alt=media&token=79c63696-b8cb-4d86-aec0-c24ecc4112f1"
+      }
+    }
+  },
+  "timeSlot": {
+    "-NPXUw07hAdPN-2ll-iR": {
+      "2023-03-02": {
+        "-NPXVBOh8NaFdvVZMDTA": {
+          "status": "1",
+          "time": "09:00 AM"
+        },
+        "-NPXVBOj8eQ5VzE0aXwy": {
+          "status": "1",
+          "time": "10:00 AM"
+        },
+        "-NPXVBOk7Q8ELF-j1eea": {
+          "status": "1",
+          "time": "11:00 AM"
+        },
+        "-NPXVBOlOFeEFU1-1vuX": {
+          "status": "1",
+          "time": "12:00 PM"
+        },
+        "-NPXVBOlOFeEFU1-1vuY": {
+          "status": "1",
+          "time": "01:00 PM"
+        }
+      }
+    },
+    "Su9h16LG8AR76qmOWy9jR7QMBca2": {
+      "2022-07-15": {
+        "-NYbF2piiJiPtl7PqyOB": {
+          "status": "0",
+          "time": "05:00 PM"
+        },
+        "-NYbF2pmW5tUY-k4muOq": {
+          "status": "0",
+          "time": "04:00 PM"
+        }
+      },
+      "2023-03-02": {
+        "-NPXT76YrKM-qWvPyUwW": {
+          "status": "1",
+          "time": "09:00 AM"
+        },
+        "-NPXT76ah7QYwepcTHXB": {
+          "status": "1",
+          "time": "10:00 AM"
+        },
+        "-NPXT76c9moiwiEQHkA5": {
+          "status": "0",
+          "time": "11:00 AM"
+        },
+        "-NPXT76c9moiwiEQHkA6": {
+          "status": "0",
+          "time": "12:00 PM"
+        },
+        "-NPXT76dG6_q9heBFcBg": {
+          "status": "0",
+          "time": "01:00 PM"
+        },
+        "-NPXT76eSY4U1XDsCuyk": {
+          "status": "1",
+          "time": "02:00 PM"
+        },
+        "-NPXT76fGgi21NwFi1hM": {
+          "status": "0",
+          "time": "03:00 PM"
+        },
+        "-NPXT76gJyOZ1548igQ3": {
+          "status": "1",
+          "time": "04:00 PM"
+        },
+        "-NPXT76gJyOZ1548igQ4": {
+          "status": "0",
+          "time": "05:00 PM"
+        }
+      },
+      "2023-03-05": {
+        "-NPkhMMx_1hVz7COc19T": {
+          "status": "0",
+          "time": "09:00 AM"
+        },
+        "-NPkhMN-C0VaYGOkpOG6": {
+          "status": "0",
+          "time": "10:00 AM"
+        },
+        "-NPkhMN0jlsxAIeZ6E5i": {
+          "status": "0",
+          "time": "11:00 AM"
+        },
+        "-NPkhMN3zYuMdTh9Cvqp": {
+          "status": "0",
+          "time": "12:00 PM"
+        },
+        "-NPkhYkDprkY3UAYJXSI": {
+          "status": "1",
+          "time": "02:00 PM"
+        }
+      },
+      "2023-04-05": {
+        "-NSJwazMmJvgFVWPu8Im": {
+          "status": "0",
+          "time": "09:00 AM"
+        },
+        "-NSJwazOxhYDuIl_FOTe": {
+          "status": "0",
+          "time": "10:00 AM"
+        },
+        "-NSJwazP-4A-wMgjFNRA": {
+          "status": "0",
+          "time": "11:00 AM"
+        },
+        "-NSJwazP-4A-wMgjFNRB": {
+          "status": "1",
+          "time": "12:00 PM"
+        }
+      },
+      "2023-04-21": {
+        "-NTV0tpXhicoVwmKSQIZ": {
+          "status": "0",
+          "time": "09:00 AM"
+        },
+        "-NTV0tpYYKvbM_3N4sED": {
+          "status": "0",
+          "time": "10:00 AM"
+        },
+        "-NTV0tpYYKvbM_3N4sEE": {
+          "status": "0",
+          "time": "11:00 AM"
+        },
+        "-NTV0tpZBD2BdcX156dG": {
+          "status": "0",
+          "time": "12:00 PM"
+        },
+        "-NTV0tp_4PftzcBkCTEN": {
+          "status": "0",
+          "time": "01:00 PM"
+        },
+        "-NTV0tp_4PftzcBkCTEO": {
+          "status": "0",
+          "time": "02:00 PM"
+        },
+        "-NTV0tp_4PftzcBkCTEP": {
+          "status": "0",
+          "time": "03:00 PM"
+        },
+        "-NTV0tp_4PftzcBkCTEQ": {
+          "status": "0",
+          "time": "04:00 PM"
+        },
+        "-NTV0tpaN9P5l6rAV5MO": {
+          "status": "0",
+          "time": "05:00 PM"
+        }
+      },
+      "2023-05-05": {
+        "-NUeHZ4KhzAl22cpA7gj": {
+          "status": "1",
+          "time": "09:00 AM"
+        },
+        "-NUeHZ4NzRR1aCGphciw": {
+          "status": "0",
+          "time": "10:00 AM"
+        },
+        "-NUeHZ4OBP5i9_grZiZ9": {
+          "status": "0",
+          "time": "11:00 AM"
+        },
+        "-NUeHZ4P7n_MiSfjdk9q": {
+          "status": "0",
+          "time": "12:00 PM"
+        },
+        "-NUeHZ4P7n_MiSfjdk9r": {
+          "status": "0",
+          "time": "01:00 PM"
+        },
+        "-NUeHZ4QsX8jqBJf0_Vy": {
+          "status": "0",
+          "time": "02:00 PM"
+        },
+        "-NUeHZ4RvhJxQWDcO6r_": {
+          "status": "0",
+          "time": "03:00 PM"
+        },
+        "-NUeHZ4RvhJxQWDcO6ra": {
+          "status": "0",
+          "time": "04:00 PM"
+        },
+        "-NUeHZ4SjO6MAWeTksWs": {
+          "status": "0",
+          "time": "05:00 PM"
+        }
+      },
+      "2023-06-05": {
+        "-NX8vPskZLHfRQmsYzMR": {
+          "status": "1",
+          "time": "09:00 AM"
+        },
+        "-NX8vPslHCC9P8xb0Gt7": {
+          "status": "0",
+          "time": "10:00 AM"
+        },
+        "-NX8vPsmwDpqYCznB5of": {
+          "status": "1",
+          "time": "11:00 AM"
+        },
+        "-NX8vPsmwDpqYCznB5og": {
+          "status": "0",
+          "time": "12:00 PM"
+        },
+        "-NX8vPsmwDpqYCznB5oh": {
+          "status": "0",
+          "time": "01:00 PM"
+        },
+        "-NX8vPsn_Vnel8c8g7dq": {
+          "status": "0",
+          "time": "02:00 PM"
+        },
+        "-NX8vPsn_Vnel8c8g7dr": {
+          "status": "0",
+          "time": "03:00 PM"
+        },
+        "-NX8vPso_sQ8ZGZfxIgx": {
+          "status": "0",
+          "time": "04:00 PM"
+        },
+        "-NX8vPso_sQ8ZGZfxIgy": {
+          "status": "1",
+          "time": "05:00 PM"
+        }
+      },
+      "2023-06-22": {
+        "-NYaNbM2oiiUVnsT2leM": {
+          "status": "1",
+          "time": "09:00 AM"
+        },
+        "-NYaNbM4qcpRw3DhUqZK": {
+          "status": "1",
+          "time": "10:00 AM"
+        }
+      },
+      "2023-06-23": {
+        "-NYaPUg9ktza7nGcsJQo": {
+          "status": "1",
+          "time": "09:00 AM"
+        },
+        "-NYaSHnbzBRpdO5Gfc2t": {
+          "status": "1",
+          "time": "10:00 AM"
+        },
+        "-NYaSHndicDHYT8ttT1I": {
+          "status": "0",
+          "time": "11:00 AM"
+        },
+        "-NYaSHndicDHYT8ttT1J": {
+          "status": "0",
+          "time": "12:00 PM"
+        },
+        "-NYbF7Jw3n5C3y_4p2yE": {
+          "status": "0",
+          "time": "04:00 PM"
+        },
+        "-NYbF7Jxpgx-d0zsYGxM": {
+          "status": "0",
+          "time": "05:00 PM"
+        }
+      },
+      "2024-01-22": {
+        "-NokRH4X8AAKD5UX-NqR": {
+          "status": "0",
+          "time": "10:00 AM"
+        },
+        "-NokRH4ZSZUL1AKJyBiW": {
+          "status": "0",
+          "time": "11:00 AM"
+        },
+        "-NokRH4ZSZUL1AKJyBiX": {
+          "status": "0",
+          "time": "12:00 PM"
+        },
+        "-NokRMVq6uPPWVWAAqko": {
+          "status": "0",
+          "time": "09:00 AM"
+        }
+      }
+    },
+    "zoETxgQdjVOqdp9dVpjTQhLLrfz2": {
+      "2023-03-04": {
+        "-NPgjgmuVLQxAJPNASYv": {
+          "status": "1",
+          "time": "01:00 PM"
+        }
+      }
+    }
+  }
+}

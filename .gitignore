@@ -1,0 +1,24 @@
+# Build & Gradle Caches
+**/build/
+**/.gradle/
+**/captures/
+**/.externalNativeBuild/
+**/.cxx/
+
+# Android Studio & IDE
+**/.idea/
+**/*.iml
+**/local.properties
+.vscode/
+
+# Old archives and temporary backups
+_archive_old_milestones/
+
+# OS specific files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Log files
+*.log
+git_setup.py

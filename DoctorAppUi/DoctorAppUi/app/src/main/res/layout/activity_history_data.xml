@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".HistoryDataActivity">
+
+    <!--<android.widget.Button
+        android:id="@+id/btnCalender"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/home_bg_btn"
+        android:textColor="@color/white"
+        android:text="click"/>-->
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/home"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="12dp"
+        app:tabSelectedTextColor="@color/black"
+        app:tabMaxWidth="0dp"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabTextColor="@color/white"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout" />
+
+</LinearLayout>

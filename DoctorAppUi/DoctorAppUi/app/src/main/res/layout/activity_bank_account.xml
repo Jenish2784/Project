@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BankAccountActivity"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="30dp">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_baseline_arrow_back_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Bank Account"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:layout_toRightOf="@id/back"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/notification" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/relativeLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="40dp"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintTop_toBottomOf="@id/txtName"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:editable="false"
+                android:cursorVisible="false"
+                android:textColor="@color/dark_grey"
+                android:paddingLeft="15dp"
+                android:background="@drawable/profile_edt_bg"/>
+
+            <TextView
+                android:id="@+id/txtAccNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/edtName"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="20dp"
+                android:text="Account Number"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/edtAccNo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintTop_toBottomOf="@id/txtAccNo"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:inputType="number"
+                android:textColor="@color/dark_grey"
+                android:paddingLeft="15dp"
+                android:background="@drawable/profile_edt_bg"/>
+
+            <TextView
+                android:id="@+id/txtIfsc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/edtAccNo"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="20dp"
+                android:text="Ifsc Number"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/edtIfsc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintTop_toBottomOf="@id/txtIfsc"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/dark_grey"
+                android:paddingLeft="15dp"
+                android:background="@drawable/profile_edt_bg"/>
+
+            <TextView
+                android:id="@+id/tvWarning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/edtIfsc"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="I am aware that if I write wrong bank account number or IFSC code, the amount may go to someone else instead of me, for which I will not be able to make a rightful claim and Keep the name as it is in the passbook"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:textColor="#D32F2F"/>
+
+            <android.widget.Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintTop_toBottomOf="@id/tvWarning"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/line_bg"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/white"
+                android:text="Save Account"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

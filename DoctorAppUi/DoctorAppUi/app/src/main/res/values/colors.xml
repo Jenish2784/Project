@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="purple_200">#FFBB86FC</color>-->
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_20">#33C5C2C2</color>
+    <color name="grey">#ECECEC</color>
+    <color name="grey_20">#80ECECEC</color>
+    <color name="dark_grey">#5E5B5B</color>
+    <color name="red">#D32F2F</color>
+    <color name="orange">#ff981a</color>
+    <color name="green">#388E3C</color>
+
+    <color name="home">#1194AA</color>
+    <color name="schedules">#C9379D</color>
+    <color name="chat">#AE7E0F</color>
+    <color name="profile">#5B37B7</color>
+
+    <color name="home_20">#331194AA</color>
+    <color name="schedules_20">#33C9379D</color>
+    <color name="chat_20">#33AE7E0F</color>
+    <color name="profile_20">#335B37B7</color>
+
+    <color name="color_one">#fb7268</color>
+    <color name="color_white">#ededf2</color>
+    <color name="color_two">#E3E0E0</color>
+
+    <color name="inProgress">#FFA726</color>
+    <color name="completed">#66BB6A</color>
+    <color name="rejected">#EF5350</color>
+    <color name="pending">#29B6F6</color>
+
+</resources>

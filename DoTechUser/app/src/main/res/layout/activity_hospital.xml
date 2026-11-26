@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HospitalActivity">
+
+    <ImageView
+        android:id="@+id/hospitalImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/hospitalName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ABC hospital"
+        android:textColor="@color/black"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/hospitalImage"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:textSize="28sp"/>
+
+    <TextView
+        android:id="@+id/keviHospital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="General Hospital"
+        android:textColor="#c1c1c1"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/hospitalName"
+        android:layout_marginLeft="20dp"
+        android:textSize="16sp"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/white"
+        app:tabIndicator="@color/dark_grey"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/keviHospital"
+        app:tabSelectedTextColor="#01D0F3"
+        app:tabMaxWidth="0dp"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabTextColor="@color/dark_grey"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

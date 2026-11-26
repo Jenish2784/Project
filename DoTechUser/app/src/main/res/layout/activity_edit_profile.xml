@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".EditProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/placeholder"
+                app:civ_border_color="@color/home"
+                app:civ_border_width="3dp" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_image"
+                android:layout_marginTop="20dp"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvName"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/alert_btn_round"
+                android:backgroundTint="#F6EDED"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtName"
+                android:layout_marginTop="15dp"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvEmail"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/alert_btn_round"
+                android:backgroundTint="#F6EDED"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvMobileNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtEmail"
+                android:layout_marginTop="15dp"
+                android:text="Mobile Number"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtMobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvMobileNo"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/alert_btn_round"
+                android:backgroundTint="#F6EDED"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/tvGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtMobileNo"
+                android:layout_marginTop="15dp"
+                android:text="Gender"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvGender"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#F6EDED"
+                android:gravity="fill"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Female"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvBirthdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGender"
+                android:layout_marginTop="15dp"
+                android:text="BirthDate"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtBirthdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvBirthdate"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/alert_btn_round"
+                android:backgroundTint="#F6EDED"
+                android:inputType="date"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtBirthdate"
+                android:layout_marginTop="15dp"
+                android:text="Height"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvHeight"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/alert_btn_round"
+                android:backgroundTint="#F6EDED"
+                android:inputType="date"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtHeight"
+                android:layout_marginTop="15dp"
+                android:text="Weight"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvWeight"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/alert_btn_round"
+                android:backgroundTint="#F6EDED"
+                android:inputType="date"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvBloodGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtWeight"
+                android:layout_marginTop="15dp"
+                android:text="Blood Group"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <!--<Spinner
+                android:id="@+id/edtBloodGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="8dp"
+                android:textSize="18sp"
+                android:backgroundTint="#F6EDED"
+                android:layout_below="@+id/tvBloodGroup"
+                android:minHeight="48dp"
+                android:maxLines="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:inputType="none"
+                android:background="@drawable/alert_btn_round"/>-->
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvBloodGroup">
+
+                <RadioGroup
+                    android:id="@+id/radioBlood"
+                    android:layout_width="370dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#F6EDED"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/aPositive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A+"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/aNegative"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A-"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/bPositive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B+"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/bNegative"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B-"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/abPositive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AB+"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/abNegative"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AB-"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/oPositive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="O+"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/oNegative"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="O-"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </RadioGroup>
+
+            </HorizontalScrollView>
+
+            <android.widget.Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/horizontalScrollRadioGroup"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/alert_btn_round"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+
+    <CheckBox
+        android:id="@+id/ch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="09:00 AM"
+        android:textColor="@color/black" />
+
+    <CheckBox
+        android:id="@+id/ch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10:00 AM"
+        android:textColor="@color/black" />
+
+    <CheckBox
+        android:id="@+id/ch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11:00 AM"
+        android:textColor="@color/black" />
+
+    <CheckBox
+        android:id="@+id/ch4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:00 PM"
+        android:textColor="@color/black" />
+
+    <CheckBox
+        android:id="@+id/ch5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01:00 PM"
+        android:textColor="@color/black" />
+
+    <CheckBox
+        android:id="@+id/ch6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="02:00 PM"
+        android:textColor="@color/black" />
+
+    <CheckBox
+        android:id="@+id/ch7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="03:00 PM"
+        android:textColor="@color/black" />
+
+    <CheckBox
+        android:id="@+id/ch8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="04:00 PM"
+        android:textColor="@color/black" />
+
+    <CheckBox
+        android:id="@+id/ch9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="05:00 PM"
+        android:textColor="@color/black" />
+
+
+    <android.widget.Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/home_bg_btn"
+        android:text="add"
+        android:textColor="@color/white" />
+
+</LinearLayout>

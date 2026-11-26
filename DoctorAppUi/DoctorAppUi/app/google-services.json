@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "517334090771",
+    "firebase_url": "https://dotech-7a869-default-rtdb.firebaseio.com",
+    "project_id": "dotech-7a869",
+    "storage_bucket": "dotech-7a869.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517334090771:android:b99169934a490ad9c56be6",
+        "android_client_info": {
+          "package_name": "com.example.doctorappui"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhXF9hHt2Vdj0MQ6qryRYVduiFd3D_7WY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517334090771:android:514384426d236c4ac56be6",
+        "android_client_info": {
+          "package_name": "com.example.dotechuser"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhXF9hHt2Vdj0MQ6qryRYVduiFd3D_7WY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

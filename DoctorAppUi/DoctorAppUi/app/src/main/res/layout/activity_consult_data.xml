@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConsultDataActivity"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="30dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/profileCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="15dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/home"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="10dp"
+                            app:cardBackgroundColor="@color/home"
+                            app:cardCornerRadius="5dp">
+
+                            <ImageView
+                                android:id="@+id/profileImage"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop" />
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/tvName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="name"
+                                android:textColor="@color/grey"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvGender"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tvName"
+                                android:text="Gender"
+                                android:textColor="@color/grey"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imgCake"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginTop="1dp"
+                                android:layout_below="@id/tvGender"
+                                android:src="@drawable/ic_baseline_cake_24"/>
+                            <TextView
+                                android:id="@+id/tvDob"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tvGender"
+                                android:layout_toRightOf="@id/imgCake"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="3dp"
+                                android:text="01/01/2001"
+                                android:textColor="@color/grey"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imgAdd"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_below="@id/imgCake"
+                                android:src="@drawable/ic_baseline_location_on_24"/>
+
+                            <TextView
+                                android:id="@+id/tvAdd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tvDob"
+                                android:layout_toRightOf="@id/imgAdd"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="3dp"
+                                android:text="Address"
+                                android:textColor="@color/grey"
+                                android:textSize="16sp" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="left">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtHeight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Height"
+                                android:textColor="@color/grey"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvHeight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="100"
+                                android:textColor="@color/grey"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_alignParentRight="true">
+
+                            <TextView
+                                android:id="@+id/txtWeight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Weight"
+                                android:textColor="@color/grey"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvWeight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="72 Kg"
+                                android:textColor="@color/grey"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_centerHorizontal="true">
+
+                            <TextView
+                                android:id="@+id/txtBloodGroup"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Blood Type"
+                                android:textColor="@color/grey"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvBloodGroup"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B+"
+                                android:textColor="@color/grey"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/consultCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/profileCardView"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/home">
+
+                    <ImageView
+                        android:id="@+id/stethoscopeImg"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/stethoscope"
+                        android:layout_margin="15dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/stethoscopeImg"
+                        android:layout_marginTop="17dp"
+                        android:text="Consult"
+                        android:textColor="@color/grey"
+                        android:textStyle="bold"
+                        android:textSize="20sp"/>
+
+                    <android.widget.Button
+                        android:id="@+id/videoBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edt_bg"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Consult Now"
+                        android:visibility="gone"
+                        android:textColor="@color/grey"
+                        android:layout_below="@id/stethoscopeImg"
+                        android:layout_marginBottom="20sp"/>
+
+                    <ImageView
+                        android:id="@+id/msgBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/stethoscopeImg"
+                        android:background="@drawable/edt_bg"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="20sp"
+                        android:layout_marginLeft="15dp"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_baseline_message_24"
+                        android:padding="8dp"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/visitCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/consultCardView"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/home">
+
+                    <ImageView
+                        android:id="@+id/visitImg"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_baseline_calendar_month_24"
+                        android:layout_margin="15dp"/>
+
+                    <TextView
+                        android:id="@+id/tvTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Consultation Time"
+                        android:textColor="@color/grey"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_toRightOf="@id/visitImg"
+                        android:layout_marginTop="15dp"/>
+
+                    <TextView
+                        android:id="@+id/tvDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="date and time"
+                        android:textColor="@color/grey"
+                        android:layout_below="@id/visitImg"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="15dp"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/detailsCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/visitCardView"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/home">
+
+                    <ImageView
+                        android:id="@+id/detailImg"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_baseline_calendar_month_24"
+                        android:layout_margin="15dp"/>
+
+                    <TextView
+                        android:id="@+id/tvDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Consulting Details"
+                        android:textColor="@color/grey"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_toRightOf="@id/detailImg"
+                        android:layout_marginTop="15dp"/>
+
+                    <TextView
+                        android:id="@+id/tvProblem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Description......"
+                        android:textColor="@color/grey"
+                        android:layout_below="@id/detailImg"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:id="@+id/tvDoctorName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="DoctorName"
+                        android:textColor="@color/grey"
+                        android:layout_below="@id/tvProblem"
+                        android:layout_marginLeft="15dp"
+                        android:visibility="gone"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:id="@+id/tvDepartmentName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="DepartmentName"
+                        android:textColor="@color/grey"
+                        android:layout_below="@id/tvDoctorName"
+                        android:layout_marginLeft="15dp"
+                        android:visibility="gone"
+                        android:layout_marginBottom="15dp"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/infoCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/detailsCardView"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/home">
+
+                    <ImageView
+                        android:id="@+id/infoImg"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_baseline_message_24"
+                        android:layout_margin="15dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Additional Information"
+                        android:textColor="@color/grey"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_toRightOf="@id/infoImg"
+                        android:layout_marginTop="15dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/infoImg"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Diagonased Condition"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/grey"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="None"
+                            android:textSize="18sp"
+                            android:textColor="@color/grey"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Medication"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/grey"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="None"
+                            android:textSize="18sp"
+                            android:textColor="@color/grey"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Allergies"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/grey"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="None"
+                            android:textSize="18sp"
+                            android:textColor="@color/grey"/>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <android.widget.Button
+                android:id="@+id/btnAccept"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:text="Accept"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/grey"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:background="@drawable/home_bg_btn"
+                app:layout_constraintEnd_toStartOf="@id/btnReject"
+                app:layout_constraintTop_toBottomOf="@id/infoCardView"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <android.widget.Button
+                android:id="@+id/btnReject"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/grey"
+                android:text="Reject"
+                android:visibility="gone"
+                android:background="@drawable/red_bg_btn"
+                app:layout_constraintTop_toBottomOf="@id/infoCardView"
+                app:layout_constraintStart_toEndOf="@id/btnAccept"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <android.widget.Button
+                android:id="@+id/btnComplete"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintTop_toBottomOf="@id/infoCardView"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:visibility="gone"
+                android:background="@drawable/home_bg_btn"
+                android:text="complete"
+                android:textColor="@color/white"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

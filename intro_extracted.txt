@@ -1,0 +1,400 @@
+DOTECH
+A PROJECT REPORT
+Submitted by
+KIRTI GARALA KAMPAN FINAVA TANISHA PATEL DITI PATEL
+In partial fulfilment for the award of the degree Of
+DIPLOMA ENGINEERING
+in
+COMPUTER ENGINEERING
+Gujarat Technological University, Ahmedabad
+2021-2022
+DEPARTMENT OF COMPUTER ENGINEERING
+CERTIFICATE
+This is to certify that the Project entitled “PHOTOGRAPHY PORTAL” has been carried out by Kirti Garala bearing Enrollment Number 194550307009 under my guidance in the fulfilment for the degree of Diploma Engineering in Computer Engineering, 6th Semester of Gujarat Technological University, Ahmedabad during the academic year 2021-22.
+Date: Place:
+DEPARTMENT OF COMPUTER ENGINEERING
+CERTIFICATE
+This is to certify that the Project entitled “PHOTOGRAPHY PORTAL” has been carried out by Kampan Finava bearing Enrollment Number 194550307005 under my guidance in the fulfilment for the degree of Diploma Engineering in Computer Engineering, 6th Semester of Gujarat Technological University, Ahmedabad during the academic year 2021-22.
+Date: Place:
+DEPARTMENT OF COMPUTER ENGINEERING
+CERTIFICATE
+This is to certify that the Project entitled “PHOTOGRAPHY PORTAL” has been carried out by Tanisha Patel bearing Enrollment Number 194550307031 under my guidance in the fulfilment for the degree of Diploma Engineering in Computer Engineering,6th Semester of Gujarat Technological University, Ahmedabad during the academic year 2021-22.
+Date: Place:
+DEPARTMENT OF COMPUTER ENGINEERING
+CERTIFICATE
+This is to certify that the Project entitled “PHOTOGRAPHY PORTAL” has been carried out by Diti Patel bearing Enrollment Number 194550307026 under my guidance in the fulfilment for the degree of Diploma Engineering in Computer Engineering,6th Semester of Gujarat Technological University, Ahmedabad during the academic year 2021-22.
+Date: Place:
+INDEX
+TOPICS
+PAGE NO.
+INDEX
+i
+LIST OF TABLES
+iii
+LIST OF FIGURES
+iv
+AKNOWLEDGEMENT
+v
+ABSTRACT
+vi
+CHAPTER 1 : INTRODUCTION
+1
+1.1 Problem Summary
+1
+1.2 Aim and Objectives of the project
+1
+1.3 Problem Specification
+1
+1.4 Brief Prior Art Search or Case Study
+1
+1.5 Plan of your work
+1
+1.6 Materials or Tool requirement
+2
+1.6.1 Hardware Requirement
+2
+1.6.2 Software requirement
+3
+CHAPTER 2: SYSTEM ANALYSIS
+4
+2.1 Study of existing system
+4
+2.2 Proposed system
+4
+2.2.1 Roles and responsibility of each modules
+4
+2.3 Advantages of the purpose system
+5
+2.4 Feasibility study
+5
+2.5 Requirements of New system
+5
+2.5.1 User Requirements
+5
+2.5.2 System Requirements
+6
+2.5.3 Functional Requirements
+6
+2.5.4 Non-functional Requirements
+6
+CHAPTER 3: SYSTEM DESIGN
+8
+3.1Use Case diagram
+8
+3.2Database design
+11
+3.2.1 Entity-Relationship diagram
+11
+3.2.2 Data dictionary
+12
+3.3Activity diagram
+15
+3.4Sequence diagram
+18
+CHAPTER 4: SYSTEM IMPLEMENTATION
+20
+4.1Architectural design
+20
+4.2Development framework
+20
+4.3Graphical User Interface (GUI)
+22
+CHAPTER 5: SUMMARY
+30
+REFERENCES
+31
+Table. no
+Table name
+Pg no.
+Table 3.2.2.1
+admin table
+12
+Table 3.2.2.2
+location table
+12
+Table 3.2.2.3
+location gallery table
+13
+Table 3.2.2.4
+Photographer table
+13
+Table 3.2.2.5
+Photo gallery
+13
+Table 3.2.2.6
+Category
+14
+Table 3.2.2.7
+City table
+14
+Table 3.2.2.8
+State table
+14
+Fig. no
+Figure name
+Pg no.
+Fig. 1.5.1
+Gantt chart
+2
+Fig. 3.1.1
+Use case diagram for admin
+8
+Fig. 3.1.2
+Use case diagram for photographer
+9
+Fig. 3.1.3
+Use case diagram for user
+10
+Fig. 3.2.1.1
+E R diagram
+11
+Fig. 3.3.1
+Activity diagram for admin
+15
+Fig. 3.3.2
+Activity diagram for photographer
+16
+Fig. 3.3.3
+Activity diagram for user
+17
+Fig. 3.4.1
+Sequence diagram for admin
+18
+Fig. 3.4.2
+Sequence diagram for photographer
+19
+Fig. 4.1.1
+Spiral model
+20
+ACKNOLEDGEMENT
+The project of “PHOTOGRAPHY PORTAL” is developed as part of our industrial training at “PATEL WEB SOLUTION” for the 6th-Semester Diploma in COMPUTER ENGINEERING.
+An acknowledgment is a place to express my gratitude towards all those who have helped us directly or indirectly.
+We would like to extend our heartily thanks with a deep sense of a gratitude and respect to all those who has provided us immense help and guidance during our project.
+We would like to express our sincere thanks to our external guide Mrs. Heena Patel for provide a vision about the system and for giving us an opportunity to undertake such a great challenging and innovative work. We are grateful for guidance, encouragement, understanding and insightful support given in the development process.
+We would like to extend my gratitude to Prof. Ravikant Vanjara, Head of Computer Engineering Department, Apollo Institute of Engineering And Technology, Ahmadabad, for this continuous encouragement and motivation.
+Last but not the least we would like to mention here that we are greatly indebted to each and everybody who has been associated with our project at any stage but whose name does not find a place in this acknowledgement.
+Kirti Garala
+Kampan Finava
+Tanisha Patel
+Diti Patel
+ABSTRACT
+PHOTOGRAPHY PORTAL is a Website by which user can get the photography packages as per their budget. When any Photographer or Customer registers themselves to our System then we do background verification including E-mail, and Contact Details and their Profiles then we approved any of request. And also there facility of categories about their occasion photography, info about photographer & their selected location. The system recommends a facility to accept the orders 24*7 which can make customers happy. If studio are providing an online portal where their customers can enjoy easy photo-shoot budget from anywhere. Since the Web application is available in the Browsers it is easily accessible and always available .All the details of the photographer and location will be available as per their wish of the client by simple logging into this website.
+CHAPTER 1 INTRODUCTION
+PROBLEM SUMMARY
+When people want to take photo or capture their memories then they all find location and photographer near them. So to save their time we create this Photography Portal.
+AIM AND OBJECTIVES OF THE PROJECT
+Aim of our project is to provide all the beautiful location for photo shoot and you can also find professional photographers on our website.
+PROBLEM SPECIFICATION
+The existing system for example many sites available has only the location of the photo shoot. Some sites have only the information of the photographers. So you cannot get locations as well as photographers in only one website. So this is the major disadvantage.
+BRIEF PRIOR ART SEARCH OR CASE STUDY
+Picture creator 9 : he is in expert photographer only.
+Weddingsutra : it is provide only information about beautiful location.
+Twogether studio : he is professional photographer.
+PLAN OF YOUR WORK
+Planning is one of the most important project management and time management techniques. Planning is preparing a sequence of action steps to achieve some specific goal. If we do it effectively, we can reduce much the necessary time and effort of achieving the goal.
+A plan is like a map. When following a plan, we can always see how much we have progressed towards our project and goal and how can we save user time.
+Project definition selection.
+Literature review and find out the problems in the existing system.
+Requirement gathering and analysis for the proposed system.
+Preparing database design (data dictionary and E-R diagram) for the proposed system.
+Preparing UML diagrams for the proposed system.
+Preparing report for the proposed system.
+Fig. 1.5.1 Gantt chart
+MATERIALS OR TOOLS REQUIRED
+The basic requirement for developing website is shown below:
+Hardware requirements
+RAM: minimum 4 GB
+Processor: At Least windows 2008/ vista either 32-bit or 64-bit, 7th to 11thGen
+Software requirements Frontend:
+CSS S
+HTML
+Back-end:
+MY SQL
+PHP
+CHAPTER 2 SYSTEM ANALYSIS
+STUDY OF EXISTING SYSTEM
+There are number of websites are available for photographer, but there is no website to connect customers/clients directly. Numbers of photographer website are available such as Twogether Studio but they not provide their services on other state and city. But we provide the services in other state or city also. On website are available for 24*7. Current system is time consuming as we come up with photographer, location, and theme. The problem with current system is that people have to search for different photographer, and location for different function. But this website will get all information about photographer, location and theme according to their need.
+PROPOSED SYSTEM
+This Photography portal is fully customized website where admin can view visitor activity and check the data of photographers. The system allows visitor to search locations as well as photographers from different location.
+Roles and responsibilities of modules
+The overall project module is divided into three parts. They are as shown below:
+Admin
+Photographer
+Visitor
+Roles of admin
+Login
+Manage Photographers
+Manage City
+Manage category
+Manage Photography places
+Manage Photography places gallery
+Manage inquiries
+Roles of Photographer
+Registration
+Login
+Manage profile
+Manage packages
+Manage Gallery
+Manage inquiries
+Logout
+Roles of visitor
+Show photography places
+Show photographers
+Show packages
+Make inquiry
+Search by place
+ADVANTAGE OF THE PROPOSED SYSTEM
+Security registration of user’s and photographers
+Easy access to the data
+Search Photographers based on their experience and skills
+Search Location based on it’s pictures and information.
+FEASIBILITY STUDY
+Feasibility study is the study of to system to check whether the system made is feasible or not. It is very useful to check whether the system work as per the requirement or not. Feasibility study is highly dependent on the type of developer, the end-user and the application on other hand.
+REQUIREMENTS OF NEW SYSTEM
+The purpose of the system is to develop website that can help and reduce the task of the users that are part of it.
+User requirements
+Data provider user need to service provider to find location s well as photographer to their choice.
+System requirements
+Front end: CSS , HTML
+Back end: MYSQL , PHP
+Other tools: MS office
+Functional requirements
+Functional requirements describe what the system should do. It means it defines specific behaviour or functions.
+Hardware Requirements
+Minimum hardware requirements are shown below:
+RAM: Minimum 4 GB
+Hard disk: Minimum 80 GB
+Processor: Intel core i3 (minimum)
+Software Requirements
+Minimum software requirements are shown below:
+Windows 7 or above
+Mysql database
+Xampp server
+MS-office
+Diagram.net
+Non-functional requirements
+Non-functional requirements describe how the system works. A non-functional requirement is a requirement that specifies criteria that can be used to judge the operation of a system, rather than specific behaviours.
+Security:
+Only authorized person can view and modify confidential details.
+Each user has his/her own access rights and lower level user here have restrictions of using some of the system components.
+One user can’t access other user’s account or information.
+Privacy:
+Any person will be not able to change or modify information from application. It is only altered by admin.
+Scalability:
+Performance of the system should not be degraded when many customers are logged in and accessing the database at the same time.
+The system must be scalable enough to be able to add any additional functionality even after the project is developed once.
+Reliability:
+The database of various modules like users, Arts maintained by system should be correct maintained up to date.
+CHAPTER 3 SYSTEM DESIGN
+USE CASE DIAGRAM
+Use Case Diagram Displays the relationship among actors and use cases. A use case diagram shows a set of use cases and actors (a special kind of class) and their relationships. Use case diagrams address the static use case view of a system.
+These diagrams are especially important in organizing and modelling the behaviours of a system.
+Table 3.1.1 Use Case Symbol
+Fig. 3.1.1 Use case diagram for admin
+Fig. 3.1.2 Use case diagram for photographer
+Fig. 3.1.3 Use case diagram for user
+DATABASE DESIGN
+Database design is the process of producing a detailed data model of the database. This data model contains all the needed logical and physical design choices and physical storage parameters needed to generate a design in a data definition language, which can be used to create a database.
+The main objectives of database deigning are to produce logical and physical designs model of the proposed database system. . The logical model concentrates on the data requirements and the data to be stored independent of physical considerations. It does not concern itself with how the data will be stored or where it will be stored physically. The physical data design model involves translating the logical design of the database onto physical media using hardware resources and software systems such as database management systems (DBMS).
+Entity Relationship (ER) diagram
+Entity relationship is described by their dependence on each other, as well as by extent of the relationship.
+We will begin by examining the basis of database management  drawing on the relationship among data and the sharing of data across different application.
+Entity relationship analysis uses three major abstractions to described data.
+Entities: - Entities are distinguishable object that can be represented in the database.
+Relationship: - It is meaningful interaction between the entities.
+Attributes: - It is nothing but properties of entities. In E-R Diagram three types of Relationship exists:-
+One-to-One (1:1):- Relationship is associated between two objects.
+One-to-Many (1: M or M: 1):- Relationship describes an entity that may more Entities related to it.
+Many-to-Many (M: M):- Relationship describes an entities multiple relationship with other entities.
+E-R diagram contains following components:
+Rectangle: This represents entity sets.
+Ellipse: This represents attributes.
+Diamonds: This represents relationship sets.
+Line: Which links attributes to entity sets and entity sets to relationship sets.
+Fig. 3.2.1.1 E R diagram
+Data Dictionary
+A Data Dictionary is Catalogue-Responsibility of the Element in a System. As the Name Suggests, these Element are Structured around Data in a Way to Meet the Use and the Organization Requirements. A Data Dictionary is a List of Elements that composes all the Data Flow Process through the System. It stores detail and description of data flow, data store and processes.
+If analysts wants to know by what other means is a table or a data item referenced in the system or where it is being used the answers are properly developed in the data dictionary. The dictionary id developed during data flow analysis and assists the analysts involved in requirements. However its content is used during system design as well.
+3.2.2.1 Feature of Data Dictionary
+The volume of data in most information system is substantial more than a single analyst can easily keep track of the same. When the teams of analyst work on assistance the task of co-coordinating data definition becomes more complex. Individual depends on the information provided by others with their assumption and the specification made by them.
+Data dictionary is integral component of structured analysis. Since dataflow diagram by them do not fully describe the subject of the investigation. The data dictionary provides additional information about system.
+Table 3.2.2.1 : admin table
+Table 3.2.2.2 : location table
+Table 3.2.2.3: location gallery table
+Table 3.2.2.4: photographer table
+Table 3.2.2.5: photo gallery table
+Table 3.2.2.6: category table
+Table 3.2.2.7: city table
+Table 3.2.2.8: state table
+ACTIVITY DIAGRAM
+Activity diagrams are one of the five diagrams in the UML for modelling the dynamic aspects of systems.
+An activity diagram is essentially a flowchart, showing flow of control from activity to activity. We use activity diagrams to model the dynamic aspects of a system. For the most part, this involves modelling the sequential (and possibly concurrent) steps in a computational process.
+With an activity diagram, you can also model the flow of an object as it moves from state to state at different points in the flow of control. Activity diagrams may stand alone to visualize, specify, construct, and document the dynamics of a society of objects, or they may be used to model the flow of control of an operation. Whereas interaction diagrams emphasize the flow of control from object to object, activity diagrams emphasize the flow of control from activity to activity.
+An activity is an ongoing non atomic execution within a state machine. Activities ultimately result in some action, which is made up of executable atomic computations those results in a change in state of the system or the return of a value. Activity diagrams are not only important for modelling the dynamic aspects of a system, but also for constructing executable systems through forward and reverse engineering.
+Table: 3.3.1 Activity Diagram Symbols
+Fig. 3.3.1 Activity diagram for admin
+Fig. .3.3.2 Activity diagram for photographer
+Fig. 3.3.3 Activity diagram for user
+SEQUENCE DIAGRAM
+A sequence diagram emphasizes the time ordering of messages. We form a sequence diagram by first placing the objects that participate in the interaction at the top of your diagram, across the X axis. Typically, you place the object that initiates the interaction at the left, and increasingly more subordinate objects to the right. Next, you place the messages that these objects send and receive along the Y axis, in order of increasing time from top to bottom. This gives the reader a clear visual cue to the flow of control over time.
+Table: 3.4.1 Sequence Diagram Symbols
+Fig. 3.4.1 Sequence diagram for Admin
+Fig. 3.4.2 Sequence diagram for photographer
+CHAPTER 4 SYSTEM IMPLEMENTATION
+ARCHITECHTURAL DESIGN
+We have used Spiral Model for the development of our project. Spiral model is the one of the most important Software Development Life Cycle models, which provides support for Risk Handling. In its diagrammatic representation, it looks like a spiral with many loops. The exact number of loops of the spiral is unknown and can vary from project to project. Each loop of spiral is called a Phase of the software development process. The exact number of phases needed to develop the product can be varied by the project manager depending upon the project risks. As the project manager dynamically determines the number of phases, so the project manger has an important role to develop product using the spiral model.
+Fig .4.1.1 Spiral model
+DEVELOPMENT FRAMEWORK
+PHP: Hypertext Pre-processor is a general purpose programming language originally designed for web development. It was originally created by Rasmus Lerdorf in 1994.
+PHP 7
+The latest PHP version made a revolution in the way we build applications that influences everything from the website & mobile to organizations & the cloud. PHP version 7 comes with features like Null Coalescing Operator, Scalar Type Declarations, Return Type declarations, Spaceship operator and many more. PHP 7 offers impressive performance, and better error handling along with scalar type hints, return type declaration and many other syntax modifications.
+When compared to PHP 5.6, this latest PHP version ensures a substantial reduction in the demands on the server. The following graph illustrates how the performance of PHP 7 made a benchmark on the WordPress CMS, and Laravel & Zend Frameworks compared to PHP 5.6.
+As such, it becomes an environment-friendly and cost-effective choice, because servers require less energy to run PHP 7 applications.
+Here are the new features with each release of PHP 7 subversions:
+Features of PHP 7.1
+Void functions
+Nullable Types
+Asynchronous Signal handling
+Class Constant visibility
+Symmetric Array Destructuring
+Features of PHP 7.2
+Abstract Method Overriding
+New Object Type
+Password hashing with Argon 2
+Features of PHP 7.3
+Trailing Comma
+Flexible Heredoc and Nowdoc Syntaxes
+PCRE2 Migration
+JSON_THROW_ON_ERROR
+PHP is widely used over other competitors like Python, Ruby and Lamp Stack for its above-mentioned advantages. Each latest version of PHP is 100 times better than its previous releases. As such, many top companies favor this scripting language for web application development. No matter of the number of competitors for PHP, still it is highly popular as well as a highly demanded programming language in emerging web application needs.
+GRAPHICAL USER INTERFACE (GUI)
+Admin side:
+Fig. 4.3.1 Admin login
+Fig. 4.3.2 Admin login (password not match)
+Fig. 4.3.3 Admin add city
+Fig. 4.3.4 Admin add location
+Fig. 4.3.5Admin add location gallery
+Fig. 4.3.6 Admin add state
+Fig. 4.3.7 Admin add category
+Visitor side:
+Fig. 4.3.8 visitor home page
+Fig. 4.3.9 visitor view location
+Fig. 4.3.10 visitor view photographers
+Fig. 4.3.11 visitor view packages
+Fig. 4.3.12 visitor registration pg for photographers
+Photographer side:
+Fig. 4.3.13 photographer add packages
+Fig. 4.3.14 photographers edit their profile
+CHAPTER 5 SUMMARY
+PHOTOGRAPHY PORTAL is a Website by which user can get the photography packages as per their budget. When any Photographer or Customer registers themselves to our System then we do background verification including E-mail, and Contact Details and their Profiles then we approved any of request. And also there facility of categories about their occasion photography, info about photographer & their selected location. And also we will develop this website in future like user will Able to promote Photography images and videos. User gets quotation according to the requirements. User can book photographer from anywhere. We will try to give 24*7 service.
+REFERENCES
+WEBSITES
+For Php Tutorial:
+https://www.w3schools.com/php/
+For HTML Tutorial: https://www.w3schools.com/html/
+For CSS: https://www.w3schools.com/w3css/defaulT.asp
+Picture creator 9 https://picturecreator9.in/
+Weddingsutra
+https://www.weddingsutra.com/
+https://www.weddingsutra.com/planning/20-pre-wedding-shoot-locations-in- india-favored-by-real-couples/
+Twogether studio https://www.arjunkarthaphotography.com/
