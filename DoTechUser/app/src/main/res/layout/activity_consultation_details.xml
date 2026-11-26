@@ -285,6 +285,20 @@
         </LinearLayout>
 
         <TextView
+            android:id="@+id/btnDownloadPrescription"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#0A5046"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginBottom="55dp"
+            android:text="📄 Download Prescription (PDF)"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
             android:id="@+id/tvconsultCompleted"
             android:layout_width="match_parent"
             android:layout_height="50dp"

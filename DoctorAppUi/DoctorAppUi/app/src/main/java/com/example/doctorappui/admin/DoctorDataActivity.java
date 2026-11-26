@@ -13,6 +13,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.example.doctorappui.EmailSendActivity;
@@ -135,6 +137,36 @@ class DoctorDataActivity extends AppCompatActivity {
                 binding.edtMobile.setText(strMobile);
                 binding.edtType.setText(strType);
                 binding.edtEmail.setText(strEmail);
+
+                binding.profileImage.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if (strImage != null && !strImage.isEmpty()) {
+                            showDegreeCertificateDialog(strImage);
+                        } else {
+                            Toast.makeText(DoctorDataActivity.this, "No certificate image available", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+            }
+
+            private void showDegreeCertificateDialog(String imageUrl) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(DoctorDataActivity.this);
+                LinearLayout layout = new LinearLayout(DoctorDataActivity.this);
+                layout.setOrientation(LinearLayout.VERTICAL);
+                layout.setPadding(20, 20, 20, 20);
+
+                ImageView iv = new ImageView(DoctorDataActivity.this);
+                iv.setLayoutParams(new LinearLayout.LayoutParams(
+                        LinearLayout.LayoutParams.MATCH_PARENT, 800));
+                iv.setScaleType(ImageView.ScaleType.FIT_CENTER);
+                Picasso.get().load(imageUrl).placeholder(R.drawable.placeholder).into(iv);
+                layout.addView(iv);
+
+                builder.setView(layout);
+                builder.setTitle("Medical Degree Certificate");
+                builder.setPositiveButton("Close", (d, w) -> d.dismiss());
+                builder.show();
             }
 
             @Override

@@ -297,13 +297,13 @@ class SignUpVerifyActivity extends AppCompatActivity {
 
                                         alert = new AlertDialog.Builder(SignUpVerifyActivity.this);
                                         LayoutInflater inflater = LayoutInflater.from(SignUpVerifyActivity.this);
-                                        View alert_view = inflater.inflate(R.layout.warning_alert_dialog, null, false);
+                                        View alert_view = inflater.inflate(R.layout.dialog_registration_success, null, false);
                                         alert.setView(alert_view);
                                         alert.setCancelable(false);
                                         AlertDialog dialog = alert.create();
-                                        Button btnOk = alert_view.findViewById(R.id.btnOk);
-                                        if (btnOk != null) {
-                                            btnOk.setOnClickListener(new View.OnClickListener() {
+                                        Button btnGoSignIn = alert_view.findViewById(R.id.btnGoSignIn);
+                                        if (btnGoSignIn != null) {
+                                            btnGoSignIn.setOnClickListener(new View.OnClickListener() {
                                                 @Override
                                                 public void onClick(View v) {
                                                     dialog.dismiss();

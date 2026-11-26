@@ -19,5 +19,9 @@ if %errorlevel% neq 0 (
     exit /b %errorlevel%
 )
 
+cd /d "T:\JENISH\Msc.it\SEMESTER-9\Mobile Application Software"
+copy /y "DoTechUser\app\build\outputs\apk\debug\app-debug.apk" "DoTech_Patient_App.apk"
+copy /y "DoctorAppUi\DoctorAppUi\app\build\outputs\apk\debug\app-debug.apk" "DoTech_Doctor_Admin_App.apk"
+
 echo.
-echo [SUCCESS] Both applications built successfully!
+echo [SUCCESS] Both applications built and copied successfully!

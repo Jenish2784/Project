@@ -1,153 +1,169 @@
 package com.example.doctorappui;
 
-        import androidx.appcompat.app.AppCompatActivity;
-        import androidx.recyclerview.widget.GridLayoutManager;
-        import androidx.recyclerview.widget.RecyclerView;
+import android.Manifest;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
+import android.os.Bundle;
+import android.view.View;
+import android.webkit.PermissionRequest;
+import android.webkit.WebChromeClient;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
+import android.widget.TextView;
+import android.widget.Toast;
 
-        import android.app.ProgressDialog;
-        import android.content.SharedPreferences;
-        import android.graphics.drawable.ColorDrawable;
-        import android.os.Bundle;
-        import android.util.Log;
-        import android.widget.ImageView;
-        import android.widget.TextView;
-        import android.widget.Toast;
-/*
-import com.example.doctorappui.adapter.ParticipantAdapter;
-import com.squareup.picasso.Picasso;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
-import live.videosdk.rtc.android.Meeting;
-import live.videosdk.rtc.android.Participant;
-import live.videosdk.rtc.android.VideoSDK;
-import live.videosdk.rtc.android.listeners.MeetingEventListener;*/
+public class MeetingActivity extends AppCompatActivity {
 
-
-public
-class MeetingActivity extends AppCompatActivity {
-
-    // declare the variables we will be using to handle the meeting
-    //private Meeting meeting;
+    private WebView webView;
+    private ProgressBar progressBar;
+    private String meetingId = "";
+    private String participantName = "";
     private boolean micEnabled = true;
     private boolean webcamEnabled = true;
-    private boolean multiStream = false;
-    ProgressDialog progressDialog = null;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_meeting);
 
-
-        progressDialog = new ProgressDialog(MeetingActivity.this);
-        progressDialog.setTitle("Joining");
-        progressDialog.setMessage("Please Wait...");
-        progressDialog.setCancelable(false);
-        progressDialog.show();
+        webView = findViewById(R.id.webViewMeeting);
+        progressBar = findViewById(R.id.meetingProgress);
 
         SharedPreferences preferences = getSharedPreferences("userData", MODE_PRIVATE);
-        String strName = preferences.getString("name", "");
+        participantName = preferences.getString("name", "Doctor");
+        if (participantName == null || participantName.isEmpty()) {
+            participantName = "Doctor";
+        }
 
+        meetingId = getIntent().getStringExtra("meetingId");
+        if (meetingId == null || meetingId.trim().isEmpty()) {
+            meetingId = "Consult_" + System.currentTimeMillis();
+        }
 
+        meetingId = meetingId.replaceAll("[^a-zA-Z0-9_]", "_");
 
-        final String token = getIntent().getStringExtra("token");
-        final String meetingId = getIntent().getStringExtra("meetingId");
-        final String participantName = strName;
-        getSupportActionBar().setTitle("Meeting Secure code : "+meetingId);
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.home)));
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle("Doctor Video Consultation");
+            getSupportActionBar().setSubtitle("Room: " + meetingId);
+            getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.home)));
+        }
 
-
-
-
-Toast.makeText(this,meetingId, Toast.LENGTH_SHORT).show();
-        Toast.makeText(this,token, Toast.LENGTH_SHORT).show();
-
-
-        // 1. Configuration VideoSDK with Token
-
-        /*VideoSDK.config(token);
-        // 2. Initialize VideoSDK Meeting
-        meeting = VideoSDK.initMeeting(
-                MeetingActivity.this, meetingId, participantName,
-                micEnabled, webcamEnabled, multiStream, null, null);
-
-        // 3. Add event listener for listening upcoming events
-        meeting.addEventListener(meetingEventListener);
-
-        //4. Join VideoSDK Meeting
-        meeting.join();*/
-
-
-        setActionListeners();
-        final RecyclerView rvParticipants = findViewById(R.id.rvParticipants);
-        rvParticipants.setLayoutManager(new GridLayoutManager(this, 1));
-        //rvParticipants.setAdapter(new ParticipantAdapter(meeting));
+        checkPermissionsAndLoadMeeting();
+        setupControls();
     }
 
-    // creating the MeetingEventListener
-
-/*
-private final MeetingEventListener meetingEventListener = new MeetingEventListener() {
-        @Override
-        public void onMeetingJoined() {
-            Log.d("#meeting", "onMeetingJoined()");
-            progressDialog.dismiss();
+    private void checkPermissionsAndLoadMeeting() {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED ||
+                ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.CAMERA, Manifest.permission.RECORD_AUDIO}, 101);
+        } else {
+            loadMeeting();
         }
-
-        @Override
-        public void onMeetingLeft() {
-            Log.d("#meeting", "onMeetingLeft()");
-            meeting = null;
-            if (!isDestroyed()) finish();
-        }
-
-        @Override
-        public void onParticipantJoined(Participant participant) {
-            Toast.makeText(MeetingActivity.this, participant.getDisplayName() + " joined", Toast.LENGTH_SHORT).show();
-        }
-
-        @Override
-        public void onParticipantLeft(Participant participant) {
-            Toast.makeText(MeetingActivity.this, participant.getDisplayName() + " left", Toast.LENGTH_SHORT).show();
-        }
-    };
-*/
-
-
-    private void setActionListeners() {
-        // toggle mic
-        findViewById(R.id.btnMic).setOnClickListener(view -> {
-            if (micEnabled) {
-                // this will mute the local participant's mic
-                //meeting.muteMic();
-                Toast.makeText(MeetingActivity.this, "Mic Disabled", Toast.LENGTH_SHORT).show();
-            } else {
-                // this will unmute the local participant's mic
-                //meeting.unmuteMic();
-                Toast.makeText(MeetingActivity.this, "Mic Enabled", Toast.LENGTH_SHORT).show();
-            }
-            micEnabled=!micEnabled;
-        });
-
-        // toggle webcam
-        findViewById(R.id.btnWebcam).setOnClickListener(view -> {
-            if (webcamEnabled) {
-                // this will disable the local participant webcam
-                //meeting.disableWebcam();
-                Toast.makeText(MeetingActivity.this, "Webcam Disabled", Toast.LENGTH_SHORT).show();
-            } else {
-                // this will enable the local participant webcam
-                //meeting.enableWebcam();
-                Toast.makeText(MeetingActivity.this, "Webcam Enabled", Toast.LENGTH_SHORT).show();
-            }
-            webcamEnabled=!webcamEnabled;
-        });
-
-        // leave meeting
-        findViewById(R.id.btnLeave).setOnClickListener(view -> {
-            // this will make the local participant leave the meeting
-            //meeting.leave();
-        });
     }
 
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        loadMeeting();
+    }
+
+    private void loadMeeting() {
+        if (webView == null) return;
+        WebSettings webSettings = webView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        webSettings.setDomStorageEnabled(true);
+        webSettings.setDatabaseEnabled(true);
+        webSettings.setMediaPlaybackRequiresUserGesture(false);
+        webSettings.setAllowFileAccess(true);
+        webSettings.setAllowContentAccess(true);
+
+        webView.setWebChromeClient(new WebChromeClient() {
+            @Override
+            public void onPermissionRequest(final PermissionRequest request) {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        request.grant(request.getResources());
+                    }
+                });
+            }
+        });
+
+        webView.setWebViewClient(new WebViewClient() {
+            @Override
+            public void onPageStarted(WebView view, String url, Bitmap favicon) {
+                super.onPageStarted(view, url, favicon);
+                if (progressBar != null) progressBar.setVisibility(View.VISIBLE);
+            }
+
+            @Override
+            public void onPageFinished(WebView view, String url) {
+                super.onPageFinished(view, url);
+                if (progressBar != null) progressBar.setVisibility(View.GONE);
+            }
+        });
+
+        String roomUrl = "https://meet.jit.si/DoTech_" + meetingId + "#config.prejoinPageEnabled=false&userInfo.displayName=" + Uri.encode("Dr. " + participantName);
+        webView.loadUrl(roomUrl);
+    }
+
+    private void setupControls() {
+        ImageView btnLeave = findViewById(R.id.btnLeave);
+        if (btnLeave != null) {
+            btnLeave.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (webView != null) {
+                        webView.loadUrl("about:blank");
+                    }
+                    Toast.makeText(MeetingActivity.this, "Consultation call ended", Toast.LENGTH_SHORT).show();
+                    finish();
+                }
+            });
+        }
+
+        ImageView btnMic = findViewById(R.id.btnMic);
+        if (btnMic != null) {
+            btnMic.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    micEnabled = !micEnabled;
+                    Toast.makeText(MeetingActivity.this, micEnabled ? "Mic Enabled" : "Mic Muted", Toast.LENGTH_SHORT).show();
+                }
+            });
+        }
+
+        ImageView btnWebcam = findViewById(R.id.btnWebcam);
+        if (btnWebcam != null) {
+            btnWebcam.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    webcamEnabled = !webcamEnabled;
+                    Toast.makeText(MeetingActivity.this, webcamEnabled ? "Camera Enabled" : "Camera Disabled", Toast.LENGTH_SHORT).show();
+                }
+            });
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        if (webView != null) {
+            webView.loadUrl("about:blank");
+            webView.destroy();
+        }
+        super.onDestroy();
+    }
 }

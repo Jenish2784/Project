@@ -36,6 +36,7 @@ public class ConsultationDetailsActivity extends AppCompatActivity {
     FirebaseDatabase database;
     DatabaseReference reference;
     String strDoctorName = "";
+    String strUserName = "";
     String strDoctorProfileImage = "";
     String strDoctorCategory = "";
     String strDate = "";
@@ -89,6 +90,7 @@ public class ConsultationDetailsActivity extends AppCompatActivity {
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                     for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
                         Consultation consultation = dataSnapshot.getValue(Consultation.class);
+                        strUserName = consultation.getUserName();
                         strDoctorProfileImage = consultation.getDoctorProfileImage();
                         strDoctorName = consultation.getDoctorName();
                         doctorId = consultation.getDoctorId();
@@ -106,6 +108,10 @@ public class ConsultationDetailsActivity extends AppCompatActivity {
 
                         currentTime = new SimpleDateFormat("KK : mm aaa").format(Calendar.getInstance().getTime());
 
+
+                        if (status.equals("1") || "Complete".equalsIgnoreCase(status) || "Accept".equalsIgnoreCase(status)) {
+                            binding.btnDownloadPrescription.setVisibility(View.VISIBLE);
+                        }
 
                         if (type.equals("Chat Consultation")) {
                             binding.btnChat.setVisibility(View.VISIBLE);
@@ -173,6 +179,7 @@ public class ConsultationDetailsActivity extends AppCompatActivity {
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                     for (DataSnapshot snapshot1 : snapshot.getChildren()){
                         Appointment appointment = snapshot1.getValue(Appointment.class);
+                        strUserName = appointment.getUserName();
                         strDoctorProfileImage = appointment.getDoctorProfileImage();
                         strDoctorName = appointment.getDoctorName();
                         doctorId = appointment.getDoctorId();
@@ -250,6 +257,24 @@ public class ConsultationDetailsActivity extends AppCompatActivity {
         });
 
 
+        binding.btnDownloadPrescription.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                com.example.dotechuser.util.PrescriptionPdfHelper.generateAndOpenPrescription(
+                        ConsultationDetailsActivity.this,
+                        strDoctorName,
+                        strDoctorCategory,
+                        strHospitalAddress,
+                        strUserName,
+                        strDate,
+                        strTime,
+                        type,
+                        strProblem,
+                        paymentId != null && !paymentId.isEmpty() ? paymentId : "CONSULT_" + System.currentTimeMillis()
+                );
+            }
+        });
+
         binding.btnCall.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -258,7 +283,9 @@ public class ConsultationDetailsActivity extends AppCompatActivity {
                 } else if (status.equals("Reject")) {
                     Toast.makeText(ConsultationDetailsActivity.this, "Your consultation is rejected", Toast.LENGTH_SHORT).show();
                 } else if (status.equals("Accept") || status.equals("1")) {
-                    Toast.makeText(ConsultationDetailsActivity.this, meetId + "", Toast.LENGTH_SHORT).show();
+                    if (meetId == null || meetId.trim().isEmpty()) {
+                        meetId = "Consult_" + (paymentId != null ? paymentId : System.currentTimeMillis());
+                    }
                     Intent intent = new Intent(ConsultationDetailsActivity.this, MeetingActivity.class);
                     intent.putExtra("token", sampleToken);
                     intent.putExtra("meetingId", meetId);

@@ -365,14 +365,18 @@ class ConsultDataActivity extends AppCompatActivity {
             public
             void onClick(View view) {
                 if (status.equals("Accept")) {
-                    if (!strLink.equals("")) {
-                        Intent intent = new Intent(ConsultDataActivity.this, MeetingActivity.class);
-                        intent.putExtra("token", sampleToken);
-                        intent.putExtra("meetingId", strLink);
-                        startActivity(intent);
-                    } else {
-                        Toast.makeText(ConsultDataActivity.this, "Server down", Toast.LENGTH_SHORT).show();
+                    if (strLink == null || strLink.trim().isEmpty()) {
+                        strLink = "room_" + System.currentTimeMillis();
+                        if (strUserType.equals("doctor")) {
+                            FirebaseDatabase.getInstance().getReference("Consultation").child(consultId).child("meetLink").setValue(strLink);
+                        } else {
+                            FirebaseDatabase.getInstance().getReference("Appointment").child(consultId).child("meetLink").setValue(strLink);
+                        }
                     }
+                    Intent intent = new Intent(ConsultDataActivity.this, MeetingActivity.class);
+                    intent.putExtra("token", sampleToken);
+                    intent.putExtra("meetingId", strLink);
+                    startActivity(intent);
                 } else if (status.equals("AcceptH")) {
                     Toast.makeText(ConsultDataActivity.this, "User not accept request", Toast.LENGTH_SHORT).show();
                 } else {
@@ -684,7 +688,22 @@ class ConsultDataActivity extends AppCompatActivity {
                     public
                     void onError(ANError anError) {
                         anError.printStackTrace();
-                        Toast.makeText(ConsultDataActivity.this, anError.getMessage(), Toast.LENGTH_SHORT).show();
+                        final String fallbackMeetingId = "room_" + System.currentTimeMillis();
+                        if (strUserType.equals("doctor")) {
+                            DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("Consultation").child(consultId);
+                            databaseReference.child("meetLink").setValue(fallbackMeetingId);
+                            databaseReference.child("status").setValue("Accept");
+                            Toast.makeText(ConsultDataActivity.this, "Consultation Accepted", Toast.LENGTH_SHORT).show();
+                            binding.btnAccept.setVisibility(View.GONE);
+                            binding.btnReject.setVisibility(View.GONE);
+                        } else if (strUserType.equals("hospital")) {
+                            DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("Appointment").child(consultId);
+                            databaseReference.child("status").setValue("Accept");
+                            databaseReference.child("meetLink").setValue(fallbackMeetingId);
+                            Toast.makeText(ConsultDataActivity.this, "Appointment Accepted", Toast.LENGTH_SHORT).show();
+                            binding.btnAccept.setVisibility(View.GONE);
+                            binding.btnReject.setVisibility(View.GONE);
+                        }
                     }
                 });
     }
