@@ -93,3 +93,4 @@ adb install -r DoTech_Doctor_Admin_App.apk
 ## 👨‍💻 Author
 - **Jenish Pokiya** - [GitHub Profile](https://github.com/Jenish2784)
 - M.Sc. (Information Technology) - Semester 9
+

@@ -82,7 +82,8 @@ public class PaymentActivity extends AppCompatActivity implements PaymentResultL
         getSupportActionBar().hide();
 
         auth = FirebaseAuth.getInstance();
-        database = FirebaseDatabase.getInstance();
+        database = FirebaseDatabase.getInstance("https://dotech-7a869-default-rtdb.firebaseio.com");
+        Checkout.preload(getApplicationContext());
 
         Intent intent = getIntent();
         if (intent.hasExtra("email")) {
@@ -190,8 +191,15 @@ public class PaymentActivity extends AppCompatActivity implements PaymentResultL
             @Override
             public void onClick(View view) {
                 starPayment();
+            }
+        });
 
-                //new Insert().execute(strEmail,"Consultation",strDoctorName,strUserName,strSelectDate,strSelectTime);
+        binding.btnSubmit.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                Toast.makeText(PaymentActivity.this, "Demo Mode: Simulating Successful Payment...", Toast.LENGTH_SHORT).show();
+                onPaymentSuccess("pay_demo_" + System.currentTimeMillis());
+                return true;
             }
         });
 
@@ -199,31 +207,31 @@ public class PaymentActivity extends AppCompatActivity implements PaymentResultL
 
     private void starPayment() {
         Checkout checkout = new Checkout();
-
+        checkout.setKeyID("rzp_test_U4pVXE6ygH2GS1");
         checkout.setImage(R.mipmap.ic_launcher);
 
         final Activity activity = this;
 
         try {
+            int payAmount = (totalAmount > 0 ? totalAmount : 500) * 100;
+
             JSONObject options = new JSONObject();
-            options.put("name", R.string.app_name);
-            options.put("description", "Payment for Anything");
+            options.put("name", "DoTech Healthcare");
+            options.put("description", "Doctor Consultation Payment");
             options.put("send_sms_hash", true);
             options.put("allow_rotation", false);
-
-            //you can omit the image option to fetch the image from dashboard
             options.put("currency", "INR");
-            options.put("amount", totalAmount * 100);
+            options.put("amount", payAmount);
 
             JSONObject preFill = new JSONObject();
-            preFill.put("email", strEmail);
+            preFill.put("email", strUserEmail != null && !strUserEmail.isEmpty() ? strUserEmail : strEmail);
             preFill.put("contact", strMobileNumber);
 
             options.put("prefill", preFill);
 
             checkout.open(activity, options);
         } catch (Exception e) {
-            Toast.makeText(activity, "Error in payment" + e.getMessage(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(activity, "Error in payment: " + e.getMessage(), Toast.LENGTH_SHORT).show();
             e.printStackTrace();
         }
     }

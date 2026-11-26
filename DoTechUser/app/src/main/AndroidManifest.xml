@@ -217,7 +217,7 @@
 
         <meta-data
             android:name="com.razorpay.ApiKey"
-            android:value="rzp_test_mpXNBLeM9ZOuLN" />
+            android:value="rzp_test_U4pVXE6ygH2GS1" />
 
 <!--        <activity-->
 <!--            android:name="com.razorpay.CheckoutActivity"-->
