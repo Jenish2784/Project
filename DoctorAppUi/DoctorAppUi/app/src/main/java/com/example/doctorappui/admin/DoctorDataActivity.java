@@ -20,8 +20,6 @@ import android.widget.Toast;
 import com.example.doctorappui.EmailSendActivity;
 import com.example.doctorappui.EncryptDecrypt;
 import com.example.doctorappui.R;
-
-import com.example.doctorappui.SendData;
 import com.example.doctorappui.databinding.ActivityDoctorDataBinding;
 import com.example.doctorappui.modal.Users;
 import com.google.firebase.auth.FirebaseAuth;
@@ -32,10 +30,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
-
-import org.apache.http.NameValuePair;
-import org.apache.http.message.BasicNameValuePair;
-import org.json.JSONObject;
 
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
@@ -57,16 +51,6 @@ class DoctorDataActivity extends AppCompatActivity {
     String strCategory="",strDegreeName="",strImage="",strStatus="",strEmail="",strMobile="",strType="",strUsername="",uId="";
     AlertDialog.Builder alert;
     AlertDialog dialog;
-
-    ProgressDialog progressDialog = null;
-    final static String TAG_EMAIL = "email";
-    final static String TAG_SUB = "subject";
-    final static String TAG_NAME = "name";
-
-    final static String INSERT_URL="http://dotech2023.000webhostapp.com/send_approve_email.php";
-
-    SendData send;
-    JSONObject jsonObject = null;
 
     @Override
     protected
@@ -334,49 +318,6 @@ class DoctorDataActivity extends AppCompatActivity {
             }
         });
 
-    }
-
-    //mail send to user
-    public class Insert extends AsyncTask {
-
-        @Override
-        protected
-        void onPreExecute() {
-            progressDialog=new ProgressDialog(DoctorDataActivity.this);
-            progressDialog.setTitle("User Approve");
-            progressDialog.setMessage("Please Wait...");
-            progressDialog.setCancelable(false);
-            progressDialog.show();
-            super.onPreExecute();
-        }
-
-        @Override
-        protected
-        Object doInBackground(Object[] objects) {
-            send = new SendData();
-            List<NameValuePair> params = new ArrayList<>();
-            params.add(new BasicNameValuePair(TAG_EMAIL,objects[0].toString()));
-            params.add(new BasicNameValuePair(TAG_SUB,objects[1].toString()));
-            params.add(new BasicNameValuePair(TAG_NAME,objects[2].toString()));
-            jsonObject = send.makeHttpRequest(INSERT_URL,"POST",params);
-
-            return null;
-        }
-
-        @Override
-        protected
-        void onPostExecute(Object o) {
-            progressDialog.dismiss();
-
-            DatabaseReference databaseReference=FirebaseDatabase.getInstance().getReference("doctor and hospital").child(uId);
-            databaseReference.child("status").setValue("1");
-            Toast.makeText(DoctorDataActivity.this, "User Approved!", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(DoctorDataActivity.this, NewRequestActivity.class);
-            startActivity(intent);
-            dialog.dismiss();
-            //Toast.makeText(MainActivity.this, ""+message+">>>"+status, Toast.LENGTH_SHORT).show();
-            super.onPostExecute(o);
-        }
     }
 
     @Override

@@ -6,7 +6,6 @@ plugins {
 android {
     namespace 'com.example.dotechuser'
     compileSdk 34
-    useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
         applicationId "com.example.dotechuser"
