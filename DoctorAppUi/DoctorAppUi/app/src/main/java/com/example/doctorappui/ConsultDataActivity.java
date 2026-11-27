@@ -11,6 +11,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -80,7 +81,11 @@ class ConsultDataActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityConsultDataBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        getSupportActionBar().hide();
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle("Consultation Details");
+            getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.home)));
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
 
         auth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
@@ -738,5 +743,10 @@ class ConsultDataActivity extends AppCompatActivity {
         return true;
     }
 
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
+    }
 
 }

@@ -4,14 +4,19 @@
     android:layout_height="wrap_content">
 
     <TextView
+        android:id="@+id/text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/text_view"
-        android:padding="12dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/slot_available_bg"
         android:gravity="center"
-        android:text="etygrtyu"
-        android:textColor="@color/black"
-        android:layout_margin="4dp"
-        android:background="@drawable/rectangle_outline"/>
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="10:00 AM"
+        android:textColor="#107163"
+        android:textSize="14sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

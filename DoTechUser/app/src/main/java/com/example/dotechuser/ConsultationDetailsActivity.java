@@ -59,7 +59,10 @@ public class ConsultationDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityConsultationDetailsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.status)));
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.status)));
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
 
         checkSelfPermission(REQUESTED_PERMISSIONS[0], PERMISSION_REQ_ID);
         checkSelfPermission(REQUESTED_PERMISSIONS[1], PERMISSION_REQ_ID);
@@ -311,6 +314,12 @@ public class ConsultationDetailsActivity extends AppCompatActivity {
             ActivityCompat.requestPermissions(this, REQUESTED_PERMISSIONS, requestCode);
             return false;
         }
+        return true;
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
         return true;
     }
 

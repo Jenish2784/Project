@@ -79,6 +79,15 @@ public class CompleteFragment extends Fragment {
                             list.add(consultation);
                         }
                     }
+                    if (binding != null) {
+                        if (list.isEmpty()) {
+                            binding.emptyView.setVisibility(View.VISIBLE);
+                            binding.completeListRecyclerView.setVisibility(View.GONE);
+                        } else {
+                            binding.emptyView.setVisibility(View.GONE);
+                            binding.completeListRecyclerView.setVisibility(View.VISIBLE);
+                        }
+                    }
                     adapter.notifyDataSetChanged();
                 }
 
@@ -108,6 +117,15 @@ public class CompleteFragment extends Fragment {
                         if (strStatus.equals("1") && consultation.getPaymentStatus().equals("1")) {
                             consultation.setConsultId(dataSnapshot.getKey());
                             list.add(consultation);
+                        }
+                    }
+                    if (binding != null) {
+                        if (list.isEmpty()) {
+                            binding.emptyView.setVisibility(View.VISIBLE);
+                            binding.completeListRecyclerView.setVisibility(View.GONE);
+                        } else {
+                            binding.emptyView.setVisibility(View.GONE);
+                            binding.completeListRecyclerView.setVisibility(View.VISIBLE);
                         }
                     }
                     adapter.notifyDataSetChanged();

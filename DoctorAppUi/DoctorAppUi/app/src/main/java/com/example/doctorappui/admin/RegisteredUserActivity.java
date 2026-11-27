@@ -42,8 +42,11 @@ class RegisteredUserActivity extends AppCompatActivity {
 
         setContentView(binding.getRoot());
 
-        getSupportActionBar().setTitle("Registered Patient");
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.home)));
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle("Registered Patients");
+            getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.home)));
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
 
         binding.edtSearch.addTextChangedListener(new TextWatcher() {
             @Override
@@ -112,6 +115,13 @@ class RegisteredUserActivity extends AppCompatActivity {
         if (!filteredList.isEmpty()){
             adapter.setFilteredList(filteredList);
         }
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        exitFormApp();
+        finish();
+        return true;
     }
 
     @Override

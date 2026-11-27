@@ -73,8 +73,11 @@ public class HospitalAppointmentTimeandDateActivity extends AppCompatActivity im
         super.onCreate(savedInstanceState);
         binding = ActivityHospitalAppointmentTimeandDateBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        getSupportActionBar().setTitle("Select date & time");
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.status)));
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle("Select date & time");
+            getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.status)));
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
 
         auth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
@@ -300,6 +303,12 @@ public class HospitalAppointmentTimeandDateActivity extends AppCompatActivity im
                 }
             }
         });
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 
 }

@@ -46,8 +46,11 @@ class AppointReportActivity extends AppCompatActivity {
         binding = ActivityAppointReportBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        getSupportActionBar().setTitle("Consult Report");
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.home)));
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle("Consult Report");
+            getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.home)));
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
 
         auth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
@@ -183,5 +186,11 @@ class AppointReportActivity extends AppCompatActivity {
         }
 
 
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 }

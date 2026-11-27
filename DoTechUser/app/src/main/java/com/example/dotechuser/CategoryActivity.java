@@ -53,7 +53,10 @@ public class CategoryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityCategoryBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.status)));
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.status)));
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
 
         auth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
@@ -61,7 +64,9 @@ public class CategoryActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         strCategoryName = intent.getStringExtra("categoryName");
-        getSupportActionBar().setTitle(strCategoryName);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle(strCategoryName != null ? strCategoryName : "Doctors");
+        }
 
         binding.searchBar.addTextChangedListener(new TextWatcher() {
             @Override
@@ -152,6 +157,12 @@ public class CategoryActivity extends AppCompatActivity {
         if (!filteredList.isEmpty()) {
             adapter.setFilteredList(filteredList);
         }
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 
 }

@@ -79,6 +79,15 @@ public class PaymentFailedFragment extends Fragment {
                         }
 
                     }
+                    if (binding != null) {
+                        if (list.isEmpty()) {
+                            binding.emptyView.setVisibility(View.VISIBLE);
+                            binding.tvPaymentFailListRecyclerView.setVisibility(View.GONE);
+                        } else {
+                            binding.emptyView.setVisibility(View.GONE);
+                            binding.tvPaymentFailListRecyclerView.setVisibility(View.VISIBLE);
+                        }
+                    }
                     adapter.notifyDataSetChanged();
                 }
 
@@ -110,6 +119,15 @@ public class PaymentFailedFragment extends Fragment {
                             list.add(consultation);
                         }
 
+                    }
+                    if (binding != null) {
+                        if (list.isEmpty()) {
+                            binding.emptyView.setVisibility(View.VISIBLE);
+                            binding.tvPaymentFailListRecyclerView.setVisibility(View.GONE);
+                        } else {
+                            binding.emptyView.setVisibility(View.GONE);
+                            binding.tvPaymentFailListRecyclerView.setVisibility(View.VISIBLE);
+                        }
                     }
                     adapter.notifyDataSetChanged();
                 }

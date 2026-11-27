@@ -29,9 +29,11 @@ class HistoryDataActivity extends AppCompatActivity {
         binding = ActivityHistoryDataBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        getSupportActionBar().setTitle("Consult History");
-
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.home)));
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle("Consult History");
+            getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.home)));
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
 
         binding.viewpager.setAdapter(new HistoryFragmentsAdapter(getSupportFragmentManager()));
         binding.tabLayout.setupWithViewPager(binding.viewpager);
@@ -57,6 +59,13 @@ class HistoryDataActivity extends AppCompatActivity {
             }
         });*/
 
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        exitFormApp();
+        finish();
+        return true;
     }
 
     @Override

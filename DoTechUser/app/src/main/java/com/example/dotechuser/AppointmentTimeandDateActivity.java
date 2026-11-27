@@ -87,8 +87,11 @@ public class AppointmentTimeandDateActivity extends AppCompatActivity implements
         super.onCreate(savedInstanceState);
         binding = ActivityAppointmentTimeandDateBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        getSupportActionBar().setTitle("Select date & time");
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.status)));
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle("Select date & time");
+            getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.status)));
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
 
         auth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
@@ -329,5 +332,11 @@ public class AppointmentTimeandDateActivity extends AppCompatActivity implements
                 binding.problemImage.setImageURI(uri);
             }
         }
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 }

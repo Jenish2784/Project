@@ -46,8 +46,11 @@ class NewRequestActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         mAuth = FirebaseAuth.getInstance();
-        getSupportActionBar().setTitle("New Request");
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.home)));
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle("New Requests");
+            getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.home)));
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
 
 
         binding.edtSearch.addTextChangedListener(new TextWatcher() {
@@ -88,7 +91,14 @@ class NewRequestActivity extends AppCompatActivity {
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()){
                     Users users = dataSnapshot.getValue(Users.class);
                     users.setUserId(dataSnapshot.getKey());
-                        list.add(users);
+                    list.add(users);
+                }
+                if (list.isEmpty()) {
+                    binding.emptyView.setVisibility(android.view.View.VISIBLE);
+                    binding.requestListview.setVisibility(android.view.View.GONE);
+                } else {
+                    binding.emptyView.setVisibility(android.view.View.GONE);
+                    binding.requestListview.setVisibility(android.view.View.VISIBLE);
                 }
                 adapter.notifyDataSetChanged();
             }
@@ -114,6 +124,13 @@ class NewRequestActivity extends AppCompatActivity {
         if (!filteredList.isEmpty()){
             adapter.setFilteredList(filteredList);
         }
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        exitFormApp();
+        finish();
+        return true;
     }
 
     @Override

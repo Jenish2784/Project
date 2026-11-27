@@ -78,6 +78,15 @@ public class InCompleteFragment extends Fragment {
                             list.add(consultation);
                         }
                     }
+                    if (binding != null) {
+                        if (list.isEmpty()) {
+                            binding.emptyView.setVisibility(View.VISIBLE);
+                            binding.inCompleteListRecyclerView.setVisibility(View.GONE);
+                        } else {
+                            binding.emptyView.setVisibility(View.GONE);
+                            binding.inCompleteListRecyclerView.setVisibility(View.VISIBLE);
+                        }
+                    }
                     adapter.notifyDataSetChanged();
                 }
 
@@ -106,6 +115,15 @@ public class InCompleteFragment extends Fragment {
                         if ((strStatus.equals("Accept") || strStatus.equals("0")) && consultation.getPaymentStatus().equals("1")) {
                             consultation.setConsultId(dataSnapshot.getKey());
                             list.add(consultation);
+                        }
+                    }
+                    if (binding != null) {
+                        if (list.isEmpty()) {
+                            binding.emptyView.setVisibility(View.VISIBLE);
+                            binding.inCompleteListRecyclerView.setVisibility(View.GONE);
+                        } else {
+                            binding.emptyView.setVisibility(View.GONE);
+                            binding.inCompleteListRecyclerView.setVisibility(View.VISIBLE);
                         }
                     }
                     adapter.notifyDataSetChanged();

@@ -58,8 +58,11 @@ class RegisteredDoctorActivity extends AppCompatActivity {
         }*/
 
 
-        getSupportActionBar().setTitle("Registered Doctor");
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.home)));
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle("Registered Doctors");
+            getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.home)));
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
 
         mAuth = FirebaseAuth.getInstance();
         adapter = new RegisteredDoctorAdapter(list, RegisteredDoctorActivity.this);
@@ -139,6 +142,13 @@ class RegisteredDoctorActivity extends AppCompatActivity {
         if (!filteredList.isEmpty()){
             adapter.setFilteredList(filteredList);
         }
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        exitFormApp();
+        finish();
+        return true;
     }
 
     @Override

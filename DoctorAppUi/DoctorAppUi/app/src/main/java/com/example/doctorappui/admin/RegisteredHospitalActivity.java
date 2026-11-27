@@ -62,8 +62,11 @@ class RegisteredHospitalActivity extends AppCompatActivity {
             }
         });
 
-        getSupportActionBar().setTitle("Registered Hospital");
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.home)));
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle("Registered Hospitals");
+            getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.home)));
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
 
         auth = FirebaseAuth.getInstance();
         adapter = new RegisteredHospitalAdapter(list,RegisteredHospitalActivity.this);
@@ -107,6 +110,13 @@ class RegisteredHospitalActivity extends AppCompatActivity {
         if (!filteredList.isEmpty()){
             adapter.setFilteredList(filteredList);
         }
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        exitFormApp();
+        finish();
+        return true;
     }
 
     @Override

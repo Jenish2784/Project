@@ -19,7 +19,10 @@ public class ConsultationListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityConsultationListBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.home)));
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.home)));
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
 
         SharedPreferences preferences = getSharedPreferences("appointmentMsg", MODE_PRIVATE);
         strType = preferences.getString("msg", "");
@@ -31,12 +34,20 @@ public class ConsultationListActivity extends AppCompatActivity {
             getSupportActionBar().setTitle("My Appointments");
         }
         else{
-            getSupportActionBar().setTitle("Server Down!!");
+            getSupportActionBar().setTitle("Consultations");
         }
 
         binding.viewpager.setAdapter(new ConsultationsFragmentAdapter(getSupportFragmentManager()));
         binding.tabLayout.setupWithViewPager(binding.viewpager);
 
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        Intent intent = new Intent(ConsultationListActivity.this, MainActivity.class);
+        startActivity(intent);
+        finish();
+        return true;
     }
 
     @Override

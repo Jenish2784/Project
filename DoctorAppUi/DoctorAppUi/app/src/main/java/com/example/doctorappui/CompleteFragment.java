@@ -86,11 +86,14 @@ class CompleteFragment extends Fragment {
                             count++;
                         }
                     }
-                    if (count == 0){
-                        binding.tvDnf.setVisibility(View.VISIBLE);
-                    }else {
-                        count = 0;
-                        binding.tvDnf.setVisibility(View.INVISIBLE);
+                    if (binding != null) {
+                        if (list.isEmpty()) {
+                            binding.emptyView.setVisibility(View.VISIBLE);
+                            binding.completeRecyclerView.setVisibility(View.GONE);
+                        } else {
+                            binding.emptyView.setVisibility(View.GONE);
+                            binding.completeRecyclerView.setVisibility(View.VISIBLE);
+                        }
                     }
                     adapter.notifyDataSetChanged();
                 }
@@ -124,11 +127,14 @@ class CompleteFragment extends Fragment {
                             count++;
                         }
                     }
-                    if (count == 0){
-                        binding.tvDnf.setVisibility(View.VISIBLE);
-                    }else {
-                        count = 0;
-                        binding.tvDnf.setVisibility(View.INVISIBLE);
+                    if (binding != null) {
+                        if (list.isEmpty()) {
+                            binding.emptyView.setVisibility(View.VISIBLE);
+                            binding.completeRecyclerView.setVisibility(View.GONE);
+                        } else {
+                            binding.emptyView.setVisibility(View.GONE);
+                            binding.completeRecyclerView.setVisibility(View.VISIBLE);
+                        }
                     }
                     adapter.notifyDataSetChanged();
                 }

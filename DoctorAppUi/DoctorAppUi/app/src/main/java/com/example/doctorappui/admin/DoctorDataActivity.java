@@ -75,6 +75,12 @@ class DoctorDataActivity extends AppCompatActivity {
         binding = ActivityDoctorDataBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle("Doctor Details");
+            getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.home)));
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+
 
         Intent intent = getIntent();
         if (intent.hasExtra("email")){
@@ -371,5 +377,11 @@ class DoctorDataActivity extends AppCompatActivity {
             //Toast.makeText(MainActivity.this, ""+message+">>>"+status, Toast.LENGTH_SHORT).show();
             super.onPostExecute(o);
         }
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 }

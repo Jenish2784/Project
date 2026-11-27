@@ -33,8 +33,11 @@ public class AppointmentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityAppointmentBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.status)));
-        getSupportActionBar().setTitle("My Appointments");
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.status)));
+            getSupportActionBar().setTitle("My Appointments");
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
 
         auth = FirebaseAuth.getInstance();
 
@@ -56,6 +59,13 @@ public class AppointmentActivity extends AppCompatActivity {
                     consultation.setConsultId(dataSnapshot.getKey());
                     consultationList.add(consultation);
                 }
+                if (consultationList.isEmpty()) {
+                    binding.emptyView.setVisibility(android.view.View.VISIBLE);
+                    binding.consultationListRecyclerView.setVisibility(android.view.View.GONE);
+                } else {
+                    binding.emptyView.setVisibility(android.view.View.GONE);
+                    binding.consultationListRecyclerView.setVisibility(android.view.View.VISIBLE);
+                }
                 adapter.notifyDataSetChanged();
             }
 
@@ -64,5 +74,11 @@ public class AppointmentActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 }
